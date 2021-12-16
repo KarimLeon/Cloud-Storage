@@ -4,3 +4,16 @@ background-color: rgb(64, 110, 121);
 
 
 }
+
+.menu {
+
+position: fixed; 
+left: 0px; 
+top: 0px;
+background-color: black;
+width: 50px; 
+padding-top: 500px;  
+padding-bottom: 30em; 
+ 
+
+} 
