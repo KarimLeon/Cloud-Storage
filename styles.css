@@ -1,7 +1,7 @@
 html { 
 
-background-color: rgb(64, 110, 121);
-
+/*  background-color: rgb(64, 110, 121); */
+background-color: white;
 
 }
 
@@ -10,7 +10,7 @@ background-color: rgb(64, 110, 121);
 position: fixed; 
 left: 0px; 
 top: 0px;
-background-color: black;
+background-image: linear-gradient(white, pink, white); 
 width: 60px; 
 padding-top: 0px;  
 padding-bottom: 44em;  
