@@ -15,4 +15,28 @@ width: 60px;
 padding-top: 0px;  
 padding-bottom: 44em;  
  
+ 
+}
+
+.menu { 
+
+will-change: transform; 
+
+
 } 
+
+
+@media (max-height: 700px) {  
+
+
+.menu {  
+
+padding-top: 0px;
+padding-bottom: 0px; 
+
+
+}
+
+} 
+
+
