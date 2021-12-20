@@ -1,12 +1,10 @@
-html { 
+body  { 
  
 /*  background-color: rgb(64, 110, 121); */
 background-image: url("images/wetpaint.jpg");  
-background-color: grey;  
-height: 100%;
-background-position: center;
+background-size: 100% 100%;
 background-repeat: no-repeat;
-background-size: cover;
+background-attachment: fixed; 
  
 }
 
