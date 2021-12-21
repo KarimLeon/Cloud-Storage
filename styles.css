@@ -4,7 +4,8 @@ body  {
 background-image: url("images/wetpaint.jpg");  
 background-size: 100% 100%;
 background-repeat: no-repeat;
-background-attachment: fixed; 
+background-attachment: fixed;
+
  
 }
 
@@ -32,6 +33,10 @@ top: 10px;
 width: 2em; 
 
 
-} 
- 
+}
 
+#circle {
+
+display: none;
+
+}
