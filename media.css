@@ -1,4 +1,4 @@
-@media screen and (min-height: 707px) { 
+@media screen and (min-height: 707px) {
 
 
 .menu { 
@@ -16,8 +16,8 @@
   width: 50px;
   height: 50px;
   background: black;
-  border-radius: 50%; 
-  display: unset;  
+  border-radius: 50%;  
+  display: unset;   
   }
 
 .phone-menu {
@@ -26,7 +26,7 @@ position: fixed;
 top: 10px; 
 left: 15px; 
 width: 2em;
-display: unset; 
+ 
 
 }
 
@@ -34,3 +34,66 @@ display: unset;
 
 
 }
+
+
+
+
+@media screen and (max-height: 670px) { 
+
+
+.menu {
+
+
+display: none; 
+
+
+}
+
+
+
+#circle {
+
+position: fixed; 
+left: 6px;
+top: 2px; 
+width: 50px;
+height: 50px;
+background: black;
+border-radius: 50%;
+display: unset;
+
+}
+
+.phone-menu {
+
+position: fixed; 
+top: 10px; 
+left: 15px;
+width: 2em;
+
+
+}
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
