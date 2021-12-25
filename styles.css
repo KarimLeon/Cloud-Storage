@@ -1,7 +1,7 @@
 body  { 
  
 /*  background-color: rgb(64, 110, 121); */
-background-image: url("images/wetpaint.webp");  
+background-image: url("images/wetpaint.webp"), url("images/wetpaint.jpg");  
 background-size: 100% 100%;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -17,7 +17,7 @@ top: 0px;
 background-color: black; 
 width: 60px; 
 padding-top: 0px;  
-padding-bottom: 44em; 
+padding-bottom: 44em;  
 opacity: 0.8;  
  
  
@@ -40,3 +40,14 @@ width: 2em;
 display: none;
 
 }
+
+
+#folder { 
+
+position: fixed; 
+left: 15px;
+top: 60px;
+width: 2em; 
+
+
+} 
