@@ -1,53 +1,160 @@
-body  { 
- 
-/*  background-color: rgb(64, 110, 121); */
-background-image: url("images/wetpaint.webp"), url("images/wetpaint.jpg");  
-background-size: 100% 100%;
-background-repeat: no-repeat;
-background-attachment: fixed;
-
- 
+body {
+  background-color: rgb(64, 110, 121);
+  /* background-image: url("images/wetpaint.webp"), url("images/wetpaint.jpg"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .menu {
-
-position: fixed; 
-left: 0px; 
-top: 0px;
-background-color: black; 
-width: 60px; 
-padding-top: 0px;  
-padding-bottom: 44em;  
-opacity: 0.8;  
- 
- 
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: black;
+  width: 60px;
+  padding-top: 0px;
+  padding-bottom: 44em;
+  opacity: 0.8;
 }
- 
 
-
-.home { 
-
-position: fixed; 
-left: 15px;
-top: 10px;  
-width: 2em; 
-
-
+.home {
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  width: 2em;
 }
 
 #circle {
-
-display: none;
-
+  display: none;
 }
 
+#folder {
+  position: fixed;
+  left: 15px;
+  top: 60px;
+  width: 2em;
+}
 
-#folder { 
+.login-register {
+  position: absolute;
+  top: 0px;
+  left: 67.18em;
+  background: rgb(64, 110, 121);
+  width: 10em;
+  height: 3em;
+  border-bottom-left-radius: 22px;
+}
 
-position: fixed; 
-left: 15px;
-top: 60px;
-width: 2em; 
+.profile {
+  position: relative;
+  left: 6.9em;
+  top: 2px;
+  background: black;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+}
 
+.profile img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
 
-} 
+/* Center Div element with different images everytime 
+user interacts with it */
+.info {
+  position: absolute;
+  top: 0px;
+  left: 95px;
+  background-image: url("images/moon-big.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 65em;
+  height: 40em;
+}
+
+.side-container1 {
+  position: absolute;
+  left: -100px;
+  top: 0px;
+  background: black;
+  /* background: url("images/pink.jpg"); */
+  width: 100px;
+  height: 40em;
+  opacity: 0.9;
+}
+
+.side-container2 {
+  position: absolute;
+  right: -100px;
+  top: 0px;
+  background: black;
+  /* background: url("images/pink.jpg"); */
+  width: 100px;
+  height: 40em;
+  opacity: 0.9;
+}
+
+.info p {
+  font-size: large;
+  color: white;
+  text-align: right;
+  font-style: italic;
+}
+
+#right_arrow {
+  position: absolute;
+  left: 3px;
+  top: 33ex;
+}
+
+#picture_end {
+  position: relative;
+  left: 45px;
+  top: 18em;
+  background: rgb(71, 157, 243);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.dots-link #dot1 {
+  position: relative;
+  top: 35.8em;
+  left: 33em;
+  background: grey;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+.dots-link #dot2 {
+  position: relative;
+  left: 35em;
+  top: 33.8em;
+  background: grey;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+.dots-link #dot3 {
+  position: relative;
+  top: 31.82em;
+  left: 37em;
+  background: grey;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+}
+
+.dots-link #dot3:hover,
+.dots-link #dot2:hover,
+.dots-link #dot1:hover {
+  background: white;
+}
+
+.side-container2:hover {
+  background: grey;
+}
