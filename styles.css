@@ -1,6 +1,10 @@
+html {
+ cursor: url("images/arrow.png"), url("images/arrow.cur"), default;	
+}
+
 body {
   background-color: rgb(64, 110, 121);
-  /* background-image: url("images/wetpaint.webp"), url("images/wetpaint.jpg"); */
+  background-image: url("images/space2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -55,14 +59,18 @@ body {
   height: 38px;
 }
 
-.profile img {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
+div#intro.info p {
+  position: absolute;
+  left: 13em;
+  font-size: 200%;
+  font-family: fantasy;
+  color: white;
 }
 
 /* Center Div element with different images everytime 
 user interacts with it */
+
+/*
 .info {
   position: absolute;
   top: 0px;
@@ -73,46 +81,49 @@ user interacts with it */
   width: 65em;
   height: 40em;
 }
+*/
+
+div#intro.info > picture img {
+  position: absolute;
+  top: 0px;
+  left: 95px;
+}
 
 .side-container1 {
   position: absolute;
-  left: -100px;
+  left: 0px;
   top: 0px;
   background: black;
   /* background: url("images/pink.jpg"); */
-  width: 100px;
+  width: 95px;
   height: 40em;
   opacity: 0.9;
 }
 
 .side-container2 {
   position: absolute;
-  right: -100px;
+  right: 0px;
   top: 0px;
   background: black;
   /* background: url("images/pink.jpg"); */
-  width: 100px;
+  width: 95px;
   height: 40em;
   opacity: 0.9;
-}
-
-.info p {
-  font-size: large;
-  color: white;
-  text-align: right;
-  font-style: italic;
+  cursor: pointer;
 }
 
 #right_arrow {
   position: absolute;
-  left: 3px;
-  top: 33ex;
+  left: 10px;
+  top: 36ex;
+  height: 5em;
+  width: 5em;
 }
 
 #picture_end {
   position: relative;
-  left: 45px;
-  top: 18em;
+  left: 40px;
+  top: 19em;
   background: rgb(71, 157, 243);
   height: 12px;
   width: 12px;
@@ -121,32 +132,32 @@ user interacts with it */
 
 .dots-link #dot1 {
   position: relative;
-  top: 35.8em;
-  left: 33em;
+  top: 35.54em;
+  left: 35em;
   background: grey;
   border-radius: 50%;
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
 }
 
 .dots-link #dot2 {
   position: relative;
-  left: 35em;
-  top: 33.8em;
+  left: 37em;
+  top: 33.74em;
   background: grey;
   border-radius: 50%;
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
 }
 
 .dots-link #dot3 {
   position: relative;
-  top: 31.82em;
-  left: 37em;
+  top: 31.91em;
+  left: 39em;
   background: grey;
   border-radius: 50%;
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
 }
 
 .dots-link #dot3:hover,

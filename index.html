@@ -4,16 +4,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="karim leon" content="Personal Website for me, Github" />
     <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="It's a cloud storage for your photos, cloud storage photos, photos, lifestyle, vacations, Have great memories stored in a cloud storage for eternity!"
+    />
     <title>Cloud Storage</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media.css" />
     <link rel="icon" href="images/photo.png " />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
   </head>
 
   <body>
     <div id="intro" class="info">
+      <picture>
+        <source srcset="images/moon_6000.jpg" media="(min-width: 1046px)" />
+        <img
+          src="images/moon-big.jpg"
+          style="width: 65.4em; height: 40em"
+          alt="Inform you guys about our cloud system"
+        />
+      </picture>
       <div class="dots-link">
         <div id="dot1"></div>
         <br />
@@ -21,19 +40,17 @@
         <br />
         <div id="dot3"></div>
       </div>
-      <div class="side-container1">
-        <div id="picture_end"></div>
-      </div>
-      <div class="side-container2">
-        <img
-          id="right_arrow"
-          src="images/right-arrow.svg"
-          alt="next"
-          style="height: 6em"
-        />
-      </div>
-      <p>It's a cloud storage for ALL! :)</p>
+      <p><strong>Try our Cloud Storage for free</strong></p>
     </div>
+
+    <div class="side-container1">
+      <div id="picture_end"></div>
+    </div>
+    <div class="side-container2">
+      <img id="right_arrow" src="images/right-arrow.svg" />
+    </div>
+
     <script src="main.js"></script>
+    <script crossorigin src="react.js"></script>
   </body>
 </html>

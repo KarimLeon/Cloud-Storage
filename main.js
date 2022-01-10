@@ -1,4 +1,20 @@
-const right_arrow = document.getElementById('right_arrow');
+const img = document.querySelector("#intro > picture > img")
+const sideContainer2 = document.querySelector("#intro > div.side-container2")
+const dot1 = document.getElementById('dot1')
+let picSrc = document.querySelector("#intro > picture > source")
+
+
+
+function changeImages() {
+  img.setAttribute('src', 'images/wetpaint.webp');
+  picSrc.setAttribute('srcset', 'images/wetpaint.webp')
+}
+
+
+sideContainer2.addEventListener('click', changeImages())
+    
+
+
 
 /*
 right_arrow.onmouseover = () => {
@@ -14,6 +30,3 @@ right_arrow.onmouseover = () => {
   else {right_arrow.setAttribute('src', 'images/right-arrow.svg')}
 }
 */
-
-
-
