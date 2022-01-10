@@ -5,14 +5,7 @@ let picSrc = document.querySelector("#intro > picture > source")
 
 
 
-function changeImages() {
-  img.setAttribute('src', 'images/wetpaint.webp');
-  picSrc.setAttribute('srcset', 'images/wetpaint.webp')
-}
 
-
-sideContainer2.addEventListener('click', changeImages())
-    
 
 
 
