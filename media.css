@@ -5,16 +5,20 @@
   }
 }
 
-@media screen and (width: 1024px) and (height: 800px) {
+@media screen and (width: 1024px) {
   #intro > picture > img {
     width: 835px;
+  }
+}
+
+@media screen and (height: 800px) {
+  #intro > picture > img {
     height: 640px;
   }
 }
 
-@media screen and (width: 1024px) and (height: 600px) {
+@media screen and (height: 600px) {
   #intro > picture > img {
-    width: 835px;
     height: 600px;
   }
 }
