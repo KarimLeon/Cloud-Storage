@@ -11,3 +11,10 @@
     height: 640px;
   }
 }
+
+@media screen and (width: 1024px) and (height: 600px) {
+  #intro > picture > img {
+    width: 835px;
+    height: 600px;
+  }
+}
