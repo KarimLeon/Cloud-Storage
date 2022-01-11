@@ -1,19 +1,13 @@
-/*@media screen and (min-height: 707px) { 
+@media screen and (width: 1280px) {
+  #intro > picture > img {
+    width: 65.4em;
+    height: 40em;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (width: 1024px) and (height: 800px) {
+  #intro > picture > img {
+    width: 835px;
+    height: 640px;
+  }
+}
