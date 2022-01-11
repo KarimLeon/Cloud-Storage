@@ -65,6 +65,7 @@ div#intro.info p {
   font-size: 200%;
   font-family: fantasy;
   color: white;
+  cursor: text;
 }
 
 /* Center Div element with different images everytime 
@@ -113,9 +114,7 @@ div#intro.info > picture img {
 }
 
 #right_arrow {
-  position: absolute;
-  left: 10px;
-  top: 36ex;
+  margin: 275% 8.1%;
   height: 5em;
   width: 5em;
 }
