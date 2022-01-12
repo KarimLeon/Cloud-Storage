@@ -1,3 +1,5 @@
+/* All the WIDTH media queries  */
+
 @media screen and (width: 1366px) {
   #intro > picture > img {
     width: 1176px;
@@ -16,13 +18,9 @@
   }
 }
 
-@media screen and (height: 800px) {
-  #intro > picture > img {
-    height: 640px;
-  }
-}
+/* All the HEIGHT media queries */
 
-@media screen and (height: 768px) {
+@media screen and (height: 900px), (height: 800px), (height: 768px) {
   #intro > picture > img {
     height: 640px;
   }
