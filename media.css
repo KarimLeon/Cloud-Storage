@@ -1,3 +1,9 @@
+@media screen and (width: 1366px) {
+  #intro > picture > img {
+    width: 1176px;
+  }
+}
+
 @media screen and (width: 1280px) {
   #intro > picture > img {
     width: 1090px;
@@ -10,6 +16,12 @@
   }
 }
 
+@media screen and (height: 800px) {
+  #intro > picture > img {
+    height: 640px;
+  }
+}
+
 @media screen and (height: 768px) {
   #intro > picture > img {
     height: 640px;
@@ -19,11 +31,5 @@
 @media screen and (height: 600px) {
   #intro > picture > img {
     height: 600px;
-  }
-}
-
-@media screen and (height: 800px) {
-  #intro > picture > img {
-    height: 640px;
   }
 }
