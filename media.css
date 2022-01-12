@@ -1,4 +1,11 @@
 /* All the WIDTH media queries  */
+
+@media screen and (width: 1920px) {
+  #intro > picture > img {
+    width: 1730px;
+  }
+}
+
 @media screen and (width: 1680px) {
   #intro > picture > img {
     width: 1490px;
@@ -37,7 +44,9 @@
 
 /* All the HEIGHT media queries */
 
-@media screen and (height: 1050px),
+@media screen and (height: 1200px),
+  (height: 1080px),
+  (height: 1050px),
   (height: 900px),
   (height: 800px),
   (height: 768px) {
