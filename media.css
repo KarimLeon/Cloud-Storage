@@ -1,5 +1,11 @@
 /* All the WIDTH media queries  */
 
+@media screen and (width: 1440px) {
+  #intro > picture > img {
+    width: 1250px;
+  }
+}
+
 @media screen and (width: 1366px) {
   #intro > picture > img {
     width: 1176px;
