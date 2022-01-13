@@ -62,6 +62,9 @@
   .side-container2 {
     height: 60em;
   }
+  #right_arrow {
+    margin: 420% 8.1%;
+  }
 }
 
 @media screen and (height: 600px) {
