@@ -48,13 +48,8 @@
   (height: 1080px),
   (height: 1050px),
   (height: 900px),
-  (height: 800px) {
-  #intro > picture > img {
-    height: 640px;
-  }
-}
-
-@media screen and (height: 768px) {
+  (height: 800px),
+  (height: 768px) {
   #intro > picture > img {
     height: 640px;
   }
