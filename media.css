@@ -65,6 +65,9 @@
   #right_arrow {
     margin: 420% 8.1%;
   }
+  #picture_end {
+    top: 28em;	  
+  }
 }
 
 @media screen and (height: 600px) {
