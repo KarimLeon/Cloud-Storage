@@ -1,4 +1,4 @@
-/* All the WIDTH media queries  
+/* All the WIDTH media queries  */
 
 @media screen and (width: 1920px) {
   #intro > picture > img {
@@ -42,7 +42,7 @@
   }
 }
 
- All the HEIGHT media queries 
+/* All the HEIGHT media queries */
 
 @media screen and (height: 1200px),
   (height: 1050px),
@@ -66,7 +66,7 @@
     margin: 420% 8.1%;
   }
   #picture_end {
-    top: 28em;	  
+    top: 28em;
   }
 }
 
@@ -75,4 +75,3 @@
     height: 600px;
   }
 }
-*/
