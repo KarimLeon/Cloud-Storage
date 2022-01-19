@@ -27,4 +27,8 @@
   .side-container2 {
     display: none;
   }
+
+  body {
+    background-image: url("images/sonnyTest.jpg");
+  }
 }
