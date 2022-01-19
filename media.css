@@ -21,7 +21,7 @@
 
 /* Medias for phone devices */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 480px) {
   div#intro.info,
   .side-container1,
   .side-container2 {
