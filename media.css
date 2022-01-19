@@ -18,3 +18,13 @@
     width: 73.5em;
   }
 }
+
+/* Medias for phone devices */
+
+@media screen and (max-width: 428px) {
+  div#intro.info,
+  .side-container1,
+  .side-container2 {
+    display: none;
+  }
+}
