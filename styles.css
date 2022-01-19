@@ -23,7 +23,7 @@ div#intro.info p {
 /* Center Div element with different images everytime 
   user interacts with it */
 
-div#intro.info > picture img {
+#intro > picture > img {
   position: absolute;
   top: 0px;
   left: 95px;
