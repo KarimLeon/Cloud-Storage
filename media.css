@@ -21,7 +21,19 @@
 
 /* Medias for phone devices */
 
-@media screen and (max-width: 480px) and (max-height: 896px) {
+@media screen and (max-width: 480px) {
+  div#intro.info,
+  .side-container1,
+  .side-container2 {
+    display: none;
+  }
+
+  body {
+    background-image: url("images/sonnyTest.webp");
+  }
+}
+
+@media screen and (max-height: 384px) {
   div#intro.info,
   .side-container1,
   .side-container2 {
