@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: rgb(64, 110, 121);
+  /*background-color: rgb(64, 110, 121);*/
   background-image: url("images/space2.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
