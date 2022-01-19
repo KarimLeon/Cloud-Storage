@@ -21,7 +21,7 @@ div#intro.info p {
 }
 
 /* Center Div element with different images everytime 
-user interacts with it */
+  user interacts with it */
 
 div#intro.info > picture img {
   position: absolute;

@@ -1,78 +1,17 @@
-/* All the WIDTH media queries  
-
 @media screen and (width: 1920px) {
   #intro > picture > img {
-    width: 1730px;
-  }
-}
-
-@media screen and (width: 1680px) {
-  #intro > picture > img {
-    width: 1490px;
-  }
-}
-
-@media screen and (width: 1600px) {
-  #intro > picture > img {
-    width: 1410px;
+    width: 108.1em;
   }
 }
 
 @media screen and (width: 1440px) {
   #intro > picture > img {
-    width: 1250px;
+    width: 78.1em;
   }
 }
 
 @media screen and (width: 1366px) {
   #intro > picture > img {
-    width: 1176px;
+    width: 73.5em;
   }
 }
-
-@media screen and (width: 1280px) {
-  #intro > picture > img {
-    width: 1090px;
-  }
-}
-
-@media screen and (width: 1024px) {
-  #intro > picture > img {
-    width: 835px;
-  }
-}
-
- All the HEIGHT media queries 
-
-@media screen and (height: 1200px),
-  (height: 1050px),
-  (height: 900px),
-  (height: 800px),
-  (height: 768px) {
-  #intro > picture > img {
-    height: 640px;
-  }
-}
-
-@media screen and (height: 1080px) {
-  #intro > picture > img {
-    height: 960px;
-  }
-  .side-container1,
-  .side-container2 {
-    height: 60em;
-  }
-  #right_arrow {
-    margin: 420% 8.1%;
-  }
-  #picture_end {
-    top: 28em;
-  }
-}
-
-@media screen and (height: 600px) {
-  #intro > picture > img {
-    height: 600px;
-  }
-}
-*/

@@ -1,14 +1,20 @@
 'use strict'
-
-
+const sC2 = document.querySelector("body > div.side-container2")
 const dot1 = document.getElementById('dot1')
-const source = document.querySelector("#intro > picture > source")
 const img = document.querySelector("#intro > picture > img")
-let moonbig = 'images/moon-big.webp', moon1920 = 'images/moon_1920.webp';
+
+
+
+//change img src if person clicks next(Arrow)
+
+function changeImages() {
+   img.setAttribute('src', 'images/lantern.jpg')
+}
+
+sC2.addEventListener('click', changeImages)
 
 
 
     
-if (img.getAttribute('src') === moonbig || moon1920) { 
-      dot1.style.backgroundColor = "white"
-  }
+
+
