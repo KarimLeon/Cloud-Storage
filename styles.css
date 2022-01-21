@@ -8,6 +8,7 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 div#intro.info p {
@@ -16,10 +17,12 @@ div#intro.info p {
   font-size: 200%;
   font-family: fantasy;
   color: white;
-  cursor: text;
   width: 20em;
 }
 
+p {
+  cursor: text;
+}
 /* Center Div element with different images everytime 
   user interacts with it */
 
@@ -70,7 +73,7 @@ div#intro.info p {
   border-radius: 50%;
 }
 
-.dots-link #dot1 {
+#dot1 {
   position: relative;
   top: 35.54em;
   left: 37em;
@@ -80,7 +83,7 @@ div#intro.info p {
   height: 11px;
 }
 
-.dots-link #dot2 {
+#dot2 {
   position: relative;
   left: 39em;
   top: 33.74em;
@@ -90,7 +93,7 @@ div#intro.info p {
   height: 11px;
 }
 
-.dots-link #dot3 {
+#dot3 {
   position: relative;
   top: 31.91em;
   left: 41em;
