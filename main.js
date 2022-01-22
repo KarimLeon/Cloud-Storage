@@ -10,7 +10,12 @@ let beach1920 = "images/s-1920w-1281h.webp",
     beach5117 = 'images/s-5117w-3414h.webp',
     lantern = "images/lantern.webp"
 
- 
+function forced_Hover_State() {
+   dot1.style.backgroundColor = "white"
+}
+
+ forced_Hover_State()
+
 
 dot1.onclick = () => {
   let currentColor = dot1.style.backgroundColor
