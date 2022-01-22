@@ -1,7 +1,3 @@
-html {
-  cursor: url("images/arrow.png"), url("images/arrow.cur"), default;
-}
-
 body {
   /*background-color: rgb(64, 110, 121);*/
   background-image: url("images/space2.webp");
