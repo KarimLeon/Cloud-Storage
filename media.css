@@ -10,6 +10,12 @@
 @media screen and (width: 1440px) {
   #intro > picture > img {
     width: 78.1em;
+    height: 45em;
+  }
+
+  .side-container1,
+  .side-container2 {
+    height: 45em;
   }
 }
 
