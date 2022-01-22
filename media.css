@@ -1,9 +1,26 @@
 /* All the WIDTH medias for img width size, helps image fit the selected screen 
    pixels.. */
+@media screen and (width: 2560px) {
+  #intro > picture > img {
+    width: 148.1em;
+    height: 70em;
+  }
+
+  .side-container1,
+  .side-container2 {
+    height: 70em;
+  }
+}
 
 @media screen and (width: 1920px) {
   #intro > picture > img {
     width: 108.1em;
+    height: 55em;
+  }
+
+  .side-container1,
+  .side-container2 {
+    height: 55em;
   }
 }
 
