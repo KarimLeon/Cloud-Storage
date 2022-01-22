@@ -1,31 +1,34 @@
 'use strict'
-const sC2 = document.querySelector("body > div.side-container2")
-const dot1 = document.getElementById('dot1')
-const dot2 = document.getElementById('dot2')
-const img = document.querySelector("#intro > picture > img")
-let beach1920 = "images/s-1920w-1281h.webp", beach5117 = 'images/s-5117w-3414h.webp'
-let lantern = "images/lantern.jpg"
 
+const sC2 = document.querySelector("body > div.side-container2"),
+      dot1 = document.getElementById('dot1'),
+      dot2 = document.getElementById('dot2'),
+      dot3 = document.getElementById('dot3'),
+      img = document.querySelector("#intro > picture > img")
 
-//change img src if person clicks next(Arrow)
+let beach1920 = "images/s-1920w-1281h.webp", 
+    beach5117 = 'images/s-5117w-3414h.webp',
+    lantern = "images/lantern.jpg"
 
-sC2.addEventListener('click', () => {
-     
-       function dot2_ () {
-         img.setAttribute('src', lantern)
-         dot2.style.backgroundColor = "white"
-       }
+ 
 
-     function revert_dot1_color() { 
-       dot1.style.backgroundColor = "rgb(218, 123, 34)"   
-     }
+dot1.onclick = () => {
+  let currentColor = dot1.style.backgroundColor
+  dot1.style.backgroundColor = "white"
+  dot2.style.backgroundColor = ""
+  dot3.style.backgroundColor = ""
+} 
 
-       dot2_()
-       revert_dot1_color()    
+dot2.onclick = () => { 
+  let currentColor = dot2.style.backgroundColor
+  dot2.style.backgroundColor = "white"
+  dot1.style.backgroundColor = ""
+  dot3.style.backgroundColor = ""
+}
 
-})
-
-
-dot1.style.backgroundColor = "white"
-  
-
+dot3.onclick = () => { 
+  let currentColor = dot3.style.backgroundColor
+  dot3.style.backgroundColor = "white"
+  dot1.style.backgroundColor = ""
+  dot2.style.backgroundColor = ""
+}
