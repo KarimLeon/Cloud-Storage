@@ -30,6 +30,12 @@
   }
 }
 
+@media screen and (width: 1536px) {
+  #intro > picture > img {
+    width: 84.1em;
+  }
+}
+
 @media screen and (width: 1440px) {
   #intro > picture > img {
     width: 78.1em;
