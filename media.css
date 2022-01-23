@@ -24,6 +24,18 @@
   }
 }
 
+@media screen and (width: 1680px) {
+  #intro > picture > img {
+    width: 93.1em;
+    height: 50em;
+  }
+
+  .side-container1,
+  .side-container2 {
+    height: 50em;
+  }
+}
+
 @media screen and (width: 1600px) {
   #intro > picture > img {
     width: 88.1em;
