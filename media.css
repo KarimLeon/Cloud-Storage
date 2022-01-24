@@ -1,5 +1,10 @@
 /* All the WIDTH medias for img width size, helps image fit the selected screen 
    pixels.. */
+
+/* TODO --Need to center dots on the image slides 
+   TODO --Also need to fix image being a lil wider on 1024 x 600 desktop screen 
+*/
+
 @media screen and (width: 2560px) {
   #intro > picture > img {
     width: 148.1em;
@@ -58,11 +63,34 @@
   .side-container2 {
     height: 45em;
   }
+
+  #dot1 {
+    top: 40em;
+    left: 41em;
+  }
+  #dot2 {
+    top: 38.2em;
+    left: 43em;
+  }
+  #dot3 {
+    top: 36.4em;
+    left: 45em;
+  }
 }
 
 @media screen and (width: 1366px) {
   #intro > picture > img {
     width: 73.5em;
+  }
+
+  #dot3 {
+    left: 43em;
+  }
+  #dot2 {
+    left: 41em;
+  }
+  #dot1 {
+    left: 39em;
   }
 }
 
