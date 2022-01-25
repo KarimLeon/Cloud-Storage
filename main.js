@@ -43,7 +43,7 @@ dot3.onclick = () => {
   dot2.style.backgroundColor = ""
 }
 
-//TODO Need to figure out how to change image more than once using side container.. 
+//*Changes to next image if user clicks the next arrow
 
 
 function changeImage() {
