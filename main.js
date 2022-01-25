@@ -1,5 +1,6 @@
 'use strict'
 
+
 const sC2 = document.querySelector("body > div.side-container2"),
       dot1 = document.getElementById('dot1'),
       dot2 = document.getElementById('dot2'),
@@ -8,7 +9,8 @@ const sC2 = document.querySelector("body > div.side-container2"),
 
 let beach1920 = "images/s-1920w-1281h.webp", 
     beach5117 = 'images/s-5117w-3414h.webp',
-    lantern = "images/lantern.webp"
+    lantern = "images/lantern.webp",
+    light = 'images/light.webp'
 
 function forced_Hover_State() {
    dot1.style.backgroundColor = "white"
@@ -40,3 +42,26 @@ dot3.onclick = () => {
   dot1.style.backgroundColor = ""
   dot2.style.backgroundColor = ""
 }
+
+//TODO Need to figure out how to change image more than once using side container.. 
+
+
+function changeImage() {
+  const imgSrc = img.getAttribute('src')
+   
+   switch (imgSrc) { 
+      case beach1920 || beach5117: 
+      img.setAttribute('src',lantern) 
+      dot1.style.backgroundColor = ""
+      dot2.style.backgroundColor = "white"
+      break; 
+
+      case lantern: 
+      img.setAttribute("src", light)
+      dot2.style.backgroundColor = ""
+      dot3.style.backgroundColor = "white"
+   }
+
+}
+sC2.addEventListener('click', changeImage)
+
