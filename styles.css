@@ -53,13 +53,13 @@ p {
   cursor: pointer;
 }
 
-#right_arrow {
+.right_arrow {
   margin: 275% 8.1%;
   height: 5em;
   width: 5em;
 }
 
-#picture_end {
+.picture_end {
   position: relative;
   left: 40px;
   top: 19em;

@@ -77,10 +77,10 @@
     left: 45em;
   }
 
-  #picture_end {
+  .picture_end {
     top: 21em;
   }
-  #right_arrow {
+  .right_arrow {
     margin: 305% 8.1%;
   }
 }
