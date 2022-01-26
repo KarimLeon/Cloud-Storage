@@ -15,6 +15,13 @@
   .side-container2 {
     height: 70em;
   }
+
+  .picture_end {
+    top: 33em;
+  }
+  .right_arrow {
+    margin: 470% 8.1%;
+  }
 }
 
 @media screen and (width: 1920px) {
