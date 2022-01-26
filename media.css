@@ -22,6 +22,19 @@
   .right_arrow {
     margin: 470% 8.1%;
   }
+
+  #dot3 {
+    top: 60em;
+    left: 80em;
+  }
+  #dot2 {
+    top: 61.8em;
+    left: 78em;
+  }
+  #dot1 {
+    top: 63.6em;
+    left: 76em;
+  }
 }
 
 @media screen and (width: 1920px) {
