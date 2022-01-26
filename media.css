@@ -145,6 +145,16 @@
   #intro > picture > img {
     width: 52.1em;
   }
+
+  #dot1 {
+    left: 30em;
+  }
+  #dot2 {
+    left: 32em;
+  }
+  #dot3 {
+    left: 34em;
+  }
 }
 
 /* Medias for phone devices */
