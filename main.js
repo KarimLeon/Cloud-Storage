@@ -9,8 +9,8 @@ const sC2 = document.querySelector("body > div.side-container2"),
 
 let beach1920 = "images/s-1920w-1281h.webp", 
     beach5117 = 'images/s-5117w-3414h.webp',
-    lantern = "images/lantern.webp",
-    light = 'images/light.webp'
+    city = "images/city.jpg",
+    globe = 'images/r-globe.jpg'
 
 function forced_Hover_State() {
    dot1.style.backgroundColor = "white"
@@ -29,7 +29,7 @@ dot1.onclick = () => {
 
 dot2.onclick = () => { 
   let currentColor = dot2.style.backgroundColor
-  img.setAttribute('src', lantern)
+  img.setAttribute('src', city)
   dot2.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
@@ -37,7 +37,7 @@ dot2.onclick = () => {
 
 dot3.onclick = () => { 
   let currentColor = dot3.style.backgroundColor
-  img.setAttribute('src', 'images/light.webp')
+  img.setAttribute('src', globe)
   dot3.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot2.style.backgroundColor = ""
@@ -51,17 +51,18 @@ function changeImage() {
    
    switch (imgSrc) { 
       case beach1920 || beach5117: 
-      img.setAttribute('src',lantern) 
+      img.setAttribute('src',city) 
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
       break; 
 
-      case lantern: 
-      img.setAttribute("src", light)
+      case city: 
+      img.setAttribute("src", globe)
       dot2.style.backgroundColor = ""
       dot3.style.backgroundColor = "white"
    }
 
 }
 sC2.addEventListener('click', changeImage)
+
 
