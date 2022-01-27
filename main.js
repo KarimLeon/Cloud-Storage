@@ -10,7 +10,7 @@ const sC2 = document.querySelector("body > div.side-container2"),
 let beach1920 = "images/s-1920w-1281h.webp", 
     beach5117 = 'images/s-5117w-3414h.webp',
     city = "images/city.jpg",
-    globe = 'images/r-globe.jpg'
+    sunset = 'images/sunset1280.jpg'
 
 function forced_Hover_State() {
    dot1.style.backgroundColor = "white"
@@ -37,7 +37,7 @@ dot2.onclick = () => {
 
 dot3.onclick = () => { 
   let currentColor = dot3.style.backgroundColor
-  img.setAttribute('src', globe)
+  img.setAttribute('src', sunset)
   dot3.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot2.style.backgroundColor = ""
@@ -57,7 +57,7 @@ function changeImage() {
       break; 
 
       case city: 
-      img.setAttribute("src", globe)
+      img.setAttribute("src", sunset)
       dot2.style.backgroundColor = ""
       dot3.style.backgroundColor = "white"
    }
