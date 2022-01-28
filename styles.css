@@ -9,17 +9,19 @@ body {
 
 div#intro.info p {
   position: absolute;
-  left: 4em;
-  font-size: 200%;
+  top: 30px;
+  left: 6em;
   font-style: italic;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 10em;
+  width: 13em;
 }
 
 p {
   color: white;
   cursor: text;
+  line-height: 60px;
+  font-size: 150%;
 }
 /* Center Div element with different images everytime 
   user interacts with it */
