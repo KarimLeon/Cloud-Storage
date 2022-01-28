@@ -5,10 +5,10 @@ const sC2 = document.querySelector("body > div.side-container2"),
       dot1 = document.getElementById('dot1'),
       dot2 = document.getElementById('dot2'),
       dot3 = document.getElementById('dot3'),
-      img = document.querySelector("#intro > picture > img")
+      img = document.querySelector("#intro > picture > img"),
+      divP = document.querySelector("#intro > blockquote")
 
-let beach1920 = "images/s-1920w-1281h.webp", 
-    beach5117 = 'images/s-5117w-3414h.webp',
+let coffee = 'images/coffee1920.jpg',
     city = "images/city.jpg",
     sunset = 'images/sunset1280.jpg'
 
@@ -20,27 +20,27 @@ function forced_Hover_State() {
 
 
 dot1.onclick = () => {
-  let currentColor = dot1.style.backgroundColor
-  img.setAttribute('src', beach1920)
+  img.setAttribute('src', coffee)
   dot1.style.backgroundColor = "white"
   dot2.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
+  divP.setAttribute('style', 'display: content')
 } 
 
 dot2.onclick = () => { 
-  let currentColor = dot2.style.backgroundColor
   img.setAttribute('src', city)
   dot2.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
+  divP.setAttribute('style', 'display: none')
 }
 
 dot3.onclick = () => { 
-  let currentColor = dot3.style.backgroundColor
   img.setAttribute('src', sunset)
   dot3.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot2.style.backgroundColor = ""
+  divP.setAttribute('style', 'display: none')
 }
 
 //*Changes to next image if user clicks the next arrow
@@ -50,8 +50,9 @@ function changeImage() {
   const imgSrc = img.getAttribute('src')
    
    switch (imgSrc) { 
-      case beach1920 || beach5117: 
-      img.setAttribute('src',city) 
+      case coffee: 
+      img.setAttribute('src', city) 
+      divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
       break; 
