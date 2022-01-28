@@ -18,6 +18,7 @@ function forced_Hover_State() {
 
  forced_Hover_State()
 
+// Change image based off of which dots are clicked
 
 dot1.onclick = () => {
   img.setAttribute('src', coffee)
