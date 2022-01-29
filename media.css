@@ -67,6 +67,12 @@
     top: 46.6em;
     left: 56em;
   }
+
+   p {
+  font-size: 40px; 
+  line-height: 85px; 
+  }
+
 }
 
 @media screen and (width: 1680px) {
