@@ -9,7 +9,7 @@ const sC2 = document.querySelector("body > div.side-container2"),
       divP = document.querySelector("#intro > blockquote")
     
 
-let coffee = 'images/coffee1920.jpg',
+let coffee = 'images/coffee1280.jpg',
     city = "images/city1280.jpg",
     sunset = 'images/sunset1280.jpg',
     currentImgSrc = img.getAttribute('src')
