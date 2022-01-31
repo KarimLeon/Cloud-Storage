@@ -7,10 +7,12 @@ const sC2 = document.querySelector("body > div.side-container2"),
       dot3 = document.getElementById('dot3'),
       img = document.querySelector("#intro > picture > img"),
       divP = document.querySelector("#intro > blockquote")
+    
 
 let coffee = 'images/coffee1920.jpg',
-    city = "images/city.jpg",
-    sunset = 'images/sunset1280.jpg'
+    city = "images/city1280.jpg",
+    sunset = 'images/sunset1280.jpg',
+    currentImgSrc = img.getAttribute('src')
 
 function forced_Hover_State() {
    dot1.style.backgroundColor = "white"
@@ -68,3 +70,17 @@ function changeImage() {
 sC2.addEventListener('click', changeImage)
 
 
+/* TODO create if conditon with picture soucce elements, if user clicks to the next image
+   change picture srcset to the current img src so browsers picks the right image for certian
+   desktop screens!! 
+
+
+function pictureSource(src) {  
+   const firstSrc = document.querySelector('.first'),
+         secondSrc = document.querySelctor('.second')
+    
+   if (src === city) {
+       
+    } 
+}
+*/
