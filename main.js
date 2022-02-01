@@ -31,7 +31,10 @@ dot1.onclick = () => {
 } 
 
 dot2.onclick = () => { 
-  img.setAttribute('src', city)
+  img.setAttribute('src', () => { 
+    if (currentImgSrc == city || 'images/city1920.jpg' || 'images/city2560.jpg') 
+         return currentImgSrc;
+  })
   dot2.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
@@ -58,7 +61,7 @@ function changeImage() {
       divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
-      setSourceSrcset();
+      setCitySrcSrcset();
       break; 
 
       case city: 
@@ -76,7 +79,7 @@ sC2.addEventListener('click', changeImage)
    desktop screens!! 
 */
 
-function setSourceSrcset() {  
+function setCitySrcSrcset() {  
   let firstSrc = document.querySelector("#intro > picture > source.\\31 920w")
   let secSrc = document.querySelector("#intro > picture > source.\\35 618w")
   firstSrc.setAttribute('srcset', 'images/city1920.jpg')
