@@ -58,6 +58,7 @@ function changeImage() {
       divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
+      setSourceSrcset();
       break; 
 
       case city: 
@@ -75,14 +76,10 @@ sC2.addEventListener('click', changeImage)
    desktop screens!! 
 */
 
-function pictureSource(src) {  
-   const firstSrc = document.querySelector("#intro > picture > source.\\31 920w"),
-         secondSrc = document.querySelector("#intro > picture > source.\\35 618w")
-    
-   if (src === city) {
-       firstSrc.setAttribute("srcset", "images/city1920.jpg")
-       secondSrc.setAttribute("srcset", "images/city2560.jpg")
-    } 
+function setSourceSrcset() {  
+  let firstSrc = document.querySelector("#intro > picture > source.\\31 920w")
+  let secSrc = document.querySelector("#intro > picture > source.\\35 618w")
+  firstSrc.setAttribute('srcset', 'images/city1920.jpg')
+  secSrc.setAttribute('srcset', 'images.city2560.jpg')
 }
 
-pictureSource(currentImgSrc)
