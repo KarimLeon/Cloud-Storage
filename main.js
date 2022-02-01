@@ -73,14 +73,16 @@ sC2.addEventListener('click', changeImage)
 /* TODO create if conditon with picture soucce elements, if user clicks to the next image
    change picture srcset to the current img src so browsers picks the right image for certian
    desktop screens!! 
-
+*/
 
 function pictureSource(src) {  
-   const firstSrc = document.querySelector('.first'),
-         secondSrc = document.querySelctor('.second')
+   const firstSrc = document.querySelector('.1920w'),
+         secondSrc = document.querySelctor('.5618w')
     
    if (src === city) {
-       
+       firstSrc.setAttribute("srcset", "images/city1920.jpg")
+       secondSrc.setAttribute("srcset", "images/city2560.jpg")
     } 
 }
-*/
+
+pictureSource(currentImgSrc)
