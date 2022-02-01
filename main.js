@@ -76,8 +76,8 @@ sC2.addEventListener('click', changeImage)
 */
 
 function pictureSource(src) {  
-   const firstSrc = document.querySelector('.1920w'),
-         secondSrc = document.querySelctor('.5618w')
+   const firstSrc = document.querySelector("#intro > picture > source.\\31 920w"),
+         secondSrc = document.querySelector("#intro > picture > source.\\35 618w")
     
    if (src === city) {
        firstSrc.setAttribute("srcset", "images/city1920.jpg")
