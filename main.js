@@ -31,10 +31,11 @@ dot1.onclick = () => {
 } 
 
 dot2.onclick = () => { 
-  img.setAttribute('src', () => { 
-    if (currentImgSrc == city || 'images/city1920.jpg' || 'images/city2560.jpg') 
-         return currentImgSrc;
-  })
+  function currCity() {
+   if (currentImgSrc == city || 'images/city1920.jpg' || 'images/city2560.jpg') 
+   return currentImgSrc;
+  }
+  img.setAttribute('src', currCity)
   dot2.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
