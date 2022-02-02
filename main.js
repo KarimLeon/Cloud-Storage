@@ -10,7 +10,7 @@ const sC2 = document.querySelector("body > div.side-container2"),
     
 
 let coffee = 'images/WEBP/coffee1280.webp',
-    city = "images/city1280.jpg",
+    city = "images/WEBP/city1280.webp",
     sunset = 'images/sunset1280.jpg',
     currentImgSrc = img.getAttribute('src')
 
@@ -28,14 +28,16 @@ dot1.onclick = () => {
   dot2.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: content')
+  setCoffeeSrcSet()
 } 
 
 dot2.onclick = () => { 
-  img.setAttribute('src', currentImgSrc ? city || 'images/city1920.jpg' || 'images/city2560.jpg' : null)
+  img.setAttribute('src', city)
   dot2.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: none')
+  setCitySrcSrcset()
 }
 
 dot3.onclick = () => { 
@@ -72,13 +74,15 @@ sC2.addEventListener('click', changeImage)
 
 
 // TODO Download different size images for sunset image
+let firstSrc = document.querySelector("#intro > picture > source.\\31 920w")
+let secSrc = document.querySelector("#intro > picture > source.\\35 618w")
 
-function setCitySrcSrcset() {  
-  let firstSrc = document.querySelector("#intro > picture > source.\\31 920w")
-  let secSrc = document.querySelector("#intro > picture > source.\\35 618w")
-  firstSrc.setAttribute('srcset', 'images/city1920.jpg')
-  secSrc.setAttribute('srcset', 'images.city2560.jpg')
+function setCitySrcSrcset() {   
+  firstSrc.setAttribute('srcset', 'images/WEBP/city1920.webp')
+  secSrc.setAttribute('srcset', 'images/WEBP/city2560.webp')
 }
 
-function setSunSrcset() {}   
-
+function setCoffeeSrcSet() {
+  firstSrc.setAttribute('srcset', 'images/WEBP/coffee1920.webp')
+  secSrc.setAttribute('srcset', 'images/WEBP/coffee5616.webp')
+}
