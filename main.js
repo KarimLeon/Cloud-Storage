@@ -75,8 +75,9 @@ sC2.addEventListener('click', changeImage)
 
 
 // TODO Download different size images for sunset image
-let firstSrc = document.querySelector("#intro > picture > source.\\31 920w")
-let secSrc = document.querySelector("#intro > picture > source.\\35 618w")
+let firstSrc = document.querySelector("#intro > picture > source.sec")
+let secSrc = document.querySelector("#intro > picture > source.treys")
+let sourceForImgs = document.createElement('source') 
 
 function setCitySrcSrcset() {   
   firstSrc.setAttribute('srcset', 'images/WEBP/city1920.webp')
