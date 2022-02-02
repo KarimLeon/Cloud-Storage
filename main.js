@@ -9,7 +9,7 @@ const sC2 = document.querySelector("body > div.side-container2"),
       divP = document.querySelector("#intro > blockquote")
     
 
-let coffee = 'images/coffee1280.jpg',
+let coffee = 'images/WEBP/coffee1280.webp',
     city = "images/city1280.jpg",
     sunset = 'images/sunset1280.jpg',
     currentImgSrc = img.getAttribute('src')
@@ -31,11 +31,7 @@ dot1.onclick = () => {
 } 
 
 dot2.onclick = () => { 
-  function currCity() {
-   if (currentImgSrc == city || 'images/city1920.jpg' || 'images/city2560.jpg') 
-   return currentImgSrc;
-  }
-  img.setAttribute('src', currCity)
+  img.setAttribute('src', currentImgSrc ? city || 'images/city1920.jpg' || 'images/city2560.jpg' : null)
   dot2.style.backgroundColor = "white"
   dot1.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
@@ -75,10 +71,7 @@ function changeImage() {
 sC2.addEventListener('click', changeImage)
 
 
-/* TODO create if conditon with picture soucce elements, if user clicks to the next image
-   change picture srcset to the current img src so browsers picks the right image for certian
-   desktop screens!! 
-*/
+// TODO Download different size images for sunset image
 
 function setCitySrcSrcset() {  
   let firstSrc = document.querySelector("#intro > picture > source.\\31 920w")
@@ -86,4 +79,6 @@ function setCitySrcSrcset() {
   firstSrc.setAttribute('srcset', 'images/city1920.jpg')
   secSrc.setAttribute('srcset', 'images.city2560.jpg')
 }
+
+function setSunSrcset() {}   
 
