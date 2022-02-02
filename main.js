@@ -11,7 +11,7 @@ const sC2 = document.querySelector("body > div.side-container2"),
 
 let coffee = 'images/WEBP/coffee1280.webp',
     city = "images/WEBP/city1280.webp",
-    sunset = 'images/sunset1280.jpg',
+    sunset = 'images/WEBP/sunset1280.webp',
     currentImgSrc = img.getAttribute('src')
 
 function forced_Hover_State() {
