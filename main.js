@@ -46,6 +46,7 @@ dot3.onclick = () => {
   dot1.style.backgroundColor = ""
   dot2.style.backgroundColor = ""
   divP.setAttribute('style', 'display: none')
+  setSunsetSrcset()
 }
 
 //*Changes to next image if user clicks the next arrow
@@ -85,4 +86,9 @@ function setCitySrcSrcset() {
 function setCoffeeSrcSet() {
   firstSrc.setAttribute('srcset', 'images/WEBP/coffee1920.webp')
   secSrc.setAttribute('srcset', 'images/WEBP/coffee5616.webp')
+}
+
+function setSunsetSrcset() { 
+  firstSrc.setAttribute('srcset', 'images/WEBP/sunset1920.webp')
+  secSrc.setAttribute('srcset', 'images/WEBP/sunset5184.webp')
 }
