@@ -54,21 +54,21 @@
     <div class="side-container1">
       <div class="picture_end"></div>
     </div>
-    <div class="side-container2" title="Next">
+    <div class="side-container2" onclick="changeImage()" title="Next">
       <img
         class="right_arrow"
         src="images/SVG/right-arrow.svg"
         alt="Next Information Slide"
       />
     </div>
-     
+
     <script>
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-                 .register('/sw.js')
-                 .then(function() { console.log("Service Worker Registered"); });
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/sw.js").then(function () {
+          console.log("Service Worker Registered");
+        });
       }
-      </script>
-     <script async src="main.js"></script>
+    </script>
+    <script async src="main.js"></script>
   </body>
 </html>
