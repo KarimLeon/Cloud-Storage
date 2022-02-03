@@ -22,7 +22,7 @@
         <source
           class="sec"
           srcset="images/WEBP/coffee1920.webp"
-          media="(min-width: 1281px)"
+          media="(min-width: 1281px) and (max-width: 1920px)"
         />
         <source
           class="treys"
@@ -61,7 +61,14 @@
         alt="Next Information Slide"
       />
     </div>
-
-    <script async src="main.js"></script>
+     
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                 .register('/sw.js')
+                 .then(function() { console.log("Service Worker Registered"); });
+      }
+      </script>
+     <script async src="main.js"></script>
   </body>
 </html>
