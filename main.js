@@ -68,6 +68,7 @@ function changeImage() {
       img.setAttribute("src", sunset)
       dot2.style.backgroundColor = ""
       dot3.style.backgroundColor = "white"
+      setSunsetSrcset()
    }
 
 }
