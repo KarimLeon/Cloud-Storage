@@ -72,8 +72,6 @@ function changeImage() {
    }
 
 }
-//sC2.addEventListener('click', changeImage)
-
 
 // TODO Download different size images for sunset image
 let firstSrc = document.querySelector("#intro > picture > source.sec")
