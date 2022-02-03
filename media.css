@@ -88,6 +88,25 @@
   .side-container2 {
     height: 50em;
   }
+
+  .right_arrow {
+    margin: 335% 8.1%;
+  }
+  #dot3 {
+    top: 40em;
+    left: 49em;
+  }
+  #dot2 {
+    top: 41.8em;
+    left: 51em;
+  }
+  #dot1 {
+    top: 43.6em;
+    left: 53em;
+  }
+  .picture_end {
+    top: 23em;
+  }
 }
 
 @media screen and (width: 1600px) {
