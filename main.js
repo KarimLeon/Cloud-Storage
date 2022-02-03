@@ -72,7 +72,7 @@ function changeImage() {
    }
 
 }
-sC2.addEventListener('click', changeImage)
+//sC2.addEventListener('click', changeImage)
 
 
 // TODO Download different size images for sunset image
