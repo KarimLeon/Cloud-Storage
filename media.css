@@ -119,6 +119,7 @@
   #intro > picture > img {
     width: 84.1em;
   }
+  #dot3{left:48em} #dot2{left: 46em} #dot1{left:44em}
 }
 
 @media screen and (width: 1440px) {
