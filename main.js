@@ -2,9 +2,9 @@
 
 
 const sC2 = document.querySelector("body > div.side-container2"),
-      dot1 = document.getElementById('dot1'),
-      dot2 = document.getElementById('dot2'),
-      dot3 = document.getElementById('dot3'),
+      dot1 = document.querySelector("#intro > section > button.slide.dot1"),
+      dot2 = document.querySelector("#intro > section > button.slide.dot2"),
+      dot3 = document.querySelector("#intro > section > button.slide.dot3"),
       img = document.querySelector("#intro > picture > img"),
       divP = document.querySelector("#intro > blockquote")
     
