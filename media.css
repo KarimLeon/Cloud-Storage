@@ -10,18 +10,10 @@
     width: 148.1em;
     height: 70em;
   }
-
   .side-container1, .side-container2 {height: 70em;}
-  .picture_end {
-    top: 33em;
-  }
-  .right_arrow {
-    margin: 470% 8.1%;
-  }
-  p {
-    font-size: 3em;
-    line-height: 2.4em;
-  }
+  .picture_end {top: 33em }
+  .right_arrow {margin: 470% 8.1%;}
+  p {font-size: 3em;line-height:2.4em}
   button.slide{top:76em;left:89em;width:25px;height:25px;margin-right:2em}
 }
 
