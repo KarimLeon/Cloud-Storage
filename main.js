@@ -74,6 +74,8 @@ function changeImage() {
 }
 
 // TODO Download different size images for sunset image
+//* Changes source elements srcset to current img source when user clicks to the next slide
+
 let firstSrc = document.querySelector("#intro > picture > source.sec")
 let secSrc = document.querySelector("#intro > picture > source.treys")
 let sourceForImgs = document.createElement('source') 
