@@ -15,18 +15,17 @@
   .side-container2 {
     height: 70em;
   }
-
   .picture_end {
     top: 33em;
   }
   .right_arrow {
     margin: 470% 8.1%;
   }
-
   p {
     font-size: 3em;
     line-height: 2.4em;
   }
+  button.slide{top:76em;left:89em;width:25px;height:25px;margin-right:2em}
 }
 
 @media screen and (width: 1920px) {
@@ -46,12 +45,11 @@
   .right_arrow {
     margin: 390% 8.1%;
   }
-
-
   p {
     font-size: 40px;
     line-height: 85px;
   }
+ button.slide{top:58em;left:67em}
 }
 
 @media screen and (width: 1680px) {
@@ -102,6 +100,7 @@
   .right_arrow {
     margin: 305% 8.1%;
   }
+ button.slide{top: 47em;left:50em}
 }
 
 @media screen and (width: 1366px) {
@@ -109,6 +108,7 @@
     width: 73.5em;
   }
 
+ button.slide {left:47em}
 }
 
 @media screen and (width: 1024px) {
