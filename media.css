@@ -11,10 +11,7 @@
     height: 70em;
   }
 
-  .side-container1,
-  .side-container2 {
-    height: 70em;
-  }
+  .side-container1, .side-container2 {height: 70em;}
   .picture_end {
     top: 33em;
   }
