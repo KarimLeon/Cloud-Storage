@@ -1,5 +1,6 @@
 body {
   /*background-color: rgb(64, 110, 121);*/
+  /* button BG colors rgb(218, 123, 34);*/
   background-image: url("images/space2.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -73,39 +74,21 @@ p {
   border-radius: 50%;
 }
 
-#dot1 {
+button.slide {
   position: relative;
-  top: 35.54em;
-  left: 37em;
+  left: 24em;
+  top: 0em;
+  margin-right: 15px;
   background: rgb(218, 123, 34);
+  border: 0;
   border-radius: 50%;
-  width: 11px;
-  height: 11px;
+  width: 13px;
+  height: 13px;
 }
 
-#dot2 {
-  position: relative;
-  left: 39em;
-  top: 33.74em;
-  background: rgb(218, 123, 34);
-  border-radius: 50%;
-  width: 11px;
-  height: 11px;
-}
+/* hover styles */
 
-#dot3 {
-  position: relative;
-  top: 31.91em;
-  left: 41em;
-  background: rgb(218, 123, 34);
-  border-radius: 50%;
-  width: 11px;
-  height: 11px;
-}
-
-.dots-link #dot3:hover,
-.dots-link #dot2:hover,
-.dots-link #dot1:hover {
+button.slide:hover {
   background: white;
 }
 
