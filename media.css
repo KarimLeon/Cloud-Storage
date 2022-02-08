@@ -23,17 +23,9 @@
     height: 55em;
   }
 
-  .side-container1,
-  .side-container2 {
-    height: 55em;
-  }
-
-  .picture_end {
-    top: 26em;
-  }
-  .right_arrow {
-    margin: 390% 8.1%;
-  }
+  .side-container1,.side-container2 {height: 55em}
+  .picture_end {top: 26em;}
+  .right_arrow {margin: 390% 8.1%}
   p {
     font-size: 40px;
     line-height: 85px;
@@ -75,6 +67,8 @@
   #intro > picture > img {
     width: 84.1em;
   }
+  button.slide{left:53em;top:46em}.side-container1,.side-container2{height:44em}  .right_arrow{margin:300% 8.1%}.picture_end{top:20em}
+  div#intro.info p{top:2em;left:7em}p{font-size:170%;line-height:2.5em}
 }
 
 @media screen and (width: 1440px) {
