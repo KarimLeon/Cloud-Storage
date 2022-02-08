@@ -1,1 +1,178 @@
- @media screen and (width: 2560px) {#intro > picture > img {width: 148.1em;height: 70em;}.side-container1, .side-container2 {height: 70em;}.picture_end {top: 33em }.right_arrow {margin: 470% 8.1%;}p {font-size: 3em;line-height:2.4em}button.slide{top:76em;left:89em;width:25px;height:25px;margin-right:2em}}@media screen and (width: 1920px) {#intro > picture > img {width: 108.1em;height: 55em;}.side-container1,.side-container2 {height: 55em}.picture_end {top: 26em;}.right_arrow {margin: 390% 8.1%}p {font-size: 40px;line-height: 85px;}button.slide{top:58em;left:67em}}@media screen and (width: 1680px) {#intro > picture > img {width: 93.1em;height: 50em;}.side-container1, .side-container2 {height: 50em;}.right_arrow {margin: 335% 8.1%;}.picture_end {top: 23em;}}@media screen and (width: 1600px) {#intro > picture > img {width: 88.1em;height:47em;}.side-container1,.side-container2{height:47em}button.slide{top:50em;left:55em}div#intro.info p {top:2em;left:8em}p{font-size:180%;line-height:75px}.right_arrow{margin:315% 8.1%}.picture_end{top:22em}}@media screen and (width: 1536px) {#intro > picture > img {width: 84.1em;}button.slide{left:53em;top:46em}.side-container1,.side-container2{height:44em}.right_arrow{margin:300% 8.1%}.picture_end{top:20em}div#intro.info p{top:2em;left:7em}p{font-size:170%;line-height:2.5em}}@media screen and (width: 1440px) {#intro > picture > img {width: 78.1em;height: 45em;}.side-container1, .side-container2 {height: 45em;}.picture_end {top: 21em;}.right_arrow {margin: 305% 8.1%;}button.slide{top: 47em;left:50em}}@media screen and (width: 1366px) {#intro > picture > img {width: 73.5em;}button.slide {left:47em}}@media screen and (width: 1024px) {#intro > picture > img {width: 52.1em;}button.slide{left:35em}}@media screen and (max-width: 480px) {div#intro.info, .side-container1, .side-container2 {display: none;}body {background-image: url("images/sonnyTest.webp");}}@media screen and (max-width: 896px) and (max-height: 447px) {div#intro.info, .side-container1, .side-container2 {display: none;}body {background-image: url("images/flower.webp");}}
+@media screen and (width: 2560px) {
+    #intro > picture > img {
+        width: 148.1em;
+        height: 70em;
+    }
+    .side-container1,
+    .side-container2 {
+        height: 70em;
+    }
+    .picture_end {
+        top: 33em;
+    }
+    .right_arrow {
+        margin: 470% 8.1%;
+    }
+    p {
+        font-size: 3em;
+        line-height: 2.4em;
+    }
+    button.slide {
+        top: 76em;
+        left: 89em;
+        width: 25px;
+        height: 25px;
+        margin-right: 2em;
+    }
+}
+@media screen and (width: 1920px) {
+    #intro > picture > img {
+        width: 108.1em;
+        height: 55em;
+    }
+    .side-container1,
+    .side-container2 {
+        height: 55em;
+    }
+    .picture_end {
+        top: 26em;
+    }
+    .right_arrow {
+        margin: 390% 8.1%;
+    }
+    p {
+        font-size: 40px;
+        line-height: 85px;
+    }
+    button.slide {
+        top: 58em;
+        left: 67em;
+    }
+}
+@media screen and (width: 1680px) {
+    #intro > picture > img {
+        width: 93.1em;
+        height: 50em;
+    }
+    .side-container1,
+    .side-container2 {
+        height: 50em;
+    }
+    .right_arrow {
+        margin: 335% 8.1%;
+    }
+    .picture_end {
+        top: 23em;
+    }
+}
+@media screen and (width: 1600px) {
+    #intro > picture > img {
+        width: 88.1em;
+        height: 47em;
+    }
+    .side-container1,
+    .side-container2 {
+        height: 47em;
+    }
+    button.slide {
+        top: 50em;
+        left: 55em;
+    }
+    div#intro.info p {
+        top: 2em;
+        left: 8em;
+    }
+    p {
+        font-size: 180%;
+        line-height: 75px;
+    }
+    .right_arrow {
+        margin: 315% 8.1%;
+    }
+    .picture_end {
+        top: 22em;
+    }
+}
+@media screen and (width: 1536px) {
+    #intro > picture > img {
+        width: 84.1em;
+    }
+    button.slide {
+        left: 53em;
+        top: 46em;
+    }
+    .side-container1,
+    .side-container2 {
+        height: 44em;
+    }
+    .right_arrow {
+        margin: 300% 8.1%;
+    }
+    .picture_end {
+        top: 20em;
+    }
+    div#intro.info p {
+        top: 2em;
+        left: 7em;
+    }
+    p {
+        font-size: 170%;
+        line-height: 2.5em;
+    }
+}
+@media screen and (width: 1440px) {
+    #intro > picture > img {
+        width: 78.1em;
+        height: 45em;
+    }
+    .side-container1,
+    .side-container2 {
+        height: 45em;
+    }
+    .picture_end {
+        top: 21em;
+    }
+    .right_arrow {
+        margin: 305% 8.1%;
+    }
+    button.slide {
+        top: 47em;
+        left: 50em;
+    }
+}
+@media screen and (width: 1366px) {
+    #intro > picture > img {
+        width: 73.5em;
+    }
+    button.slide {
+        left: 47em;
+    }
+}
+@media screen and (width: 1024px) {
+    #intro > picture > img {
+        width: 52.1em;
+    }
+    button.slide {
+        left: 35em;
+    }
+}
+@media screen and (max-width: 480px) {
+    div#intro.info,
+    .side-container1,
+    .side-container2 {
+        display: none;
+    }
+    body {
+        background-image: url("images/sonnyTest.webp");
+    }
+}
+@media screen and (max-width: 896px) and (max-height: 447px) {
+    div#intro.info,
+    .side-container1,
+    .side-container2 {
+        display: none;
+    }
+    body {
+        background-image: url("images/flower.webp");
+    }
+}
