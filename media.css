@@ -64,6 +64,15 @@
     .picture_end {
         top: 23em;
     }
+    button.slide{
+        top: 54em;
+        left: 48rem;
+    }
+    div#intro.info p{
+        top:1.6em;
+        left:8em
+      }
+      p{line-height: 3em; font-size:175%}
 }
 @media screen and (width: 1600px) {
     #intro > picture > img {
@@ -96,6 +105,7 @@
 @media screen and (width: 1536px) {
     #intro > picture > img {
         width: 84.1em;
+        height: 44em;
     }
     button.slide {
         left: 53em;
