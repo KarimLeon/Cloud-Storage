@@ -1,13 +1,22 @@
 'use strict'
 
+/*
+const babel = require("@babel/core");
+import * as babel from "@babel/core";
+import { transform } from "@babel/core";
+*/
+
+const body = document.querySelector('.home')
 
 const sC2 = document.querySelector("body > div.side-container2"),
       dot1 = document.querySelector("#intro > section > button.slide.dot1"),
       dot2 = document.querySelector("#intro > section > button.slide.dot2"),
       dot3 = document.querySelector("#intro > section > button.slide.dot3"),
       img = document.querySelector("#intro > picture > img"),
-      divP = document.querySelector("#intro > blockquote")
-    
+      divP = document.querySelector("#intro > blockquote"),
+      main = document.querySelector('main')
+
+
 
 let coffee = 'images/WEBP/coffee1280.webp',
     city = "images/WEBP/city1280.webp",
@@ -94,3 +103,51 @@ function setSunsetSrcset() {
   firstSrc.setAttribute('srcset', 'images/WEBP/sunset1920.webp')
   secSrc.setAttribute('srcset', 'images/WEBP/sunset5184.webp')
 }
+
+
+
+// MEDIA QUERY: ADD MENU BUTTON when width is 480px or less (for Phone USERS)
+
+const phoneMedia = window.matchMedia('(max-width: 480px');
+
+function phoneAction() {
+  
+
+if (phoneMedia.matches) {
+  const menuSVG = document.createElement('svg');
+  const path1 = document.createElement('path');
+  const path2 = document.createElement('path');
+  const divForSVG = document.createElement('div');
+
+ 
+  let svgAttr = [['xmlns', "http://www.w3.org/2000/svg"], ["height","48"], ['viewBox','0 0 48 48'], ['width','48']];
+
+    
+  svgAttr.forEach(attribute => { 
+      menuSVG.setAttribute(attribute[0],attribute[1])
+  });
+   
+   
+   path1.setAttribute('d',"M0 0h48v48h-48z"); 
+   path1.setAttribute('fill', 'none');
+   path2.setAttribute('d', 'M24 4c-11.05 0-20 8.95-20 20s8.95 20 20 20 20-8.95 20-20-8.95-20-20-20zm0 24l-8-8h16l-8 8z');
+   path2.setAttribute('fill', 'black');
+   divForSVG.setAttribute('class', 'menuContainer')
+    
+
+   menuSVG.append(path1, path2);
+   divForSVG.appendChild(menuSVG);
+   body.prepend(divForSVG);
+   main.prepend(divForSVG);
+}
+
+else { 
+  let menuContainer = document.querySelector(".menuContainer")
+  menuContainer.remove();
+}
+    
+
+};
+
+phoneMedia.addEventListener('change', phoneAction);
+
