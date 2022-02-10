@@ -114,9 +114,9 @@ function phoneAction() {
   
 
 if (phoneMedia.matches) {
-  const menuSVG = document.createElement('svg');
-  const path1 = document.createElement('path');
-  const path2 = document.createElement('path');
+  const menuSVG = document.createElementNS("http://www.w3.org/2000/svg",'svg');
+  const path1 = document.createElementNS("http://www.w3.org/2000/svg",'path')
+  const path2 = document.createElementNS("http://www.w3.org/2000/svg",'path');
   const divForSVG = document.createElement('div');
 
  
