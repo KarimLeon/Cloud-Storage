@@ -110,7 +110,7 @@ function setSunsetSrcset() {
 
 const phoneMedia = window.matchMedia('(max-width: 480px');
 
-function phoneAction() {
+function createSVG_menu() {
   
 
 if (phoneMedia.matches) {
@@ -124,7 +124,7 @@ if (phoneMedia.matches) {
 
     
   svgAttr.forEach(attribute => { 
-      menuSVG.setAttribute(attribute[0],attribute[1])
+      menuSVG.setAttribute(attribute[0], attribute[1])
   });
    
    
@@ -149,5 +149,5 @@ else {
 
 };
 
-phoneMedia.addEventListener('change', phoneAction);
+phoneMedia.addEventListener('change', createSVG_menu);
 
