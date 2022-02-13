@@ -128,12 +128,6 @@ if (phoneDevice.matches) {
    main.prepend(divMenu);
 }
 
-else { 
-  let menuContainer = document.querySelector(".menuContainer")
-  menuContainer.remove();
-}
-    
-
 }
 createSVG_menu()
 //phoneMedia.addEventListener('change', createSVG_menu);
