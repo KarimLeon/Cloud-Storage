@@ -106,12 +106,13 @@ function setSunsetSrcset() {
 
 
 
-// MEDIA QUERY: ADD MENU BUTTON when width is 480px or less (for Phone USERS)
+/* MEDIA QUERY: ADD MENU BUTTON when width is 480px or less (for Phone USERS)
 
 const phoneMedia = window.matchMedia('(max-width: 480px)');
 
 function createSVG_menu() {
   
+
 
 if (phoneMedia.matches) {
   const divMenu = document.createElement('div'); 
@@ -137,3 +138,13 @@ else {
 
 phoneMedia.addEventListener('change', createSVG_menu);
 
+*/
+
+
+//Trying sum here: 
+
+
+let phoneDevice = window.matchMedia('(max-width: 500px)')
+
+
+if (phoneDevice.matches) alert('Successfully matched..')
