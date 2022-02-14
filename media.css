@@ -152,6 +152,12 @@
     top: 47em;
     left: 50em;
   }
+  div#intro.info p {
+    left: 8em;
+  }
+  p {
+    line-height: 3em;
+  }
 }
 @media screen and (width: 1366px) {
   #intro > picture > img {
