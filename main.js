@@ -1,10 +1,5 @@
 'use strict'
 
-/*
-const babel = require("@babel/core");
-import * as babel from "@babel/core";
-import { transform } from "@babel/core";
-*/
 
 const body = document.querySelector('.home')
 
@@ -14,9 +9,8 @@ const sC2 = document.querySelector("body > div.side-container2"),
       dot3 = document.querySelector("#intro > section > button.slide.dot3"),
       img = document.querySelector("#intro > picture > img"),
       divP = document.querySelector("#intro > blockquote"),
-      main = document.querySelector('main')
-
-
+      main = document.querySelector('main'),
+      picture_end = document.querySelector("body > div.side-container1 > div") 
 
 let coffee = 'images/WEBP/coffee1280.webp',
     city = "images/WEBP/city1280.webp",
@@ -37,6 +31,7 @@ dot1.onclick = () => {
   dot2.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: content')
+  picture_end.style.display = ""
   setCoffeeSrcSet()
 } 
 
@@ -46,6 +41,7 @@ dot2.onclick = () => {
   dot1.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: none')
+  addLeftArrow()
   setCitySrcSrcset()
 }
 
@@ -55,7 +51,18 @@ dot3.onclick = () => {
   dot1.style.backgroundColor = ""
   dot2.style.backgroundColor = ""
   divP.setAttribute('style', 'display: none')
+  addLeftArrow()
   setSunsetSrcset()
+}
+
+//TODO add left arrow when user clicks to the next image slide or clicks 
+// any dot image excluding the first one 
+
+
+const leftArrow = document.createElement('img') 
+
+function addLeftArrow () { 
+   picture_end.style.display = "none"
 }
 
 //*Changes to next image if user clicks the next arrow
@@ -70,6 +77,7 @@ function changeImage() {
       divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
+      picture_end.style.display = "none" 
       setCitySrcSrcset();
       break; 
 
