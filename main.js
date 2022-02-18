@@ -10,7 +10,8 @@ const sC2 = document.querySelector("body > div.side-container2"),
       img = document.querySelector("#intro > picture > img"),
       divP = document.querySelector("#intro > blockquote"),
       main = document.querySelector('main'),
-      picture_end = document.querySelector("body > div.side-container1 > div") 
+      picture_end = document.querySelector("body > div.side-container1 > div"),
+      leftArrow = document.createElement('img') 
 
 let coffee = 'images/WEBP/coffee1280.webp',
     city = "images/WEBP/city1280.webp",
@@ -32,6 +33,7 @@ dot1.onclick = () => {
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: content')
   picture_end.style.display = ""
+  leftArrow.style.display = "none"
   setCoffeeSrcSet()
 } 
 
@@ -59,10 +61,16 @@ dot3.onclick = () => {
 // any dot image excluding the first one 
 
 
-const leftArrow = document.createElement('img') 
+
 
 function addLeftArrow () { 
+  const sC1 = document.querySelector('.side-container1') 
    picture_end.style.display = "none"
+   leftArrow.setAttribute('src','images/SVG/leftArrow.svg')
+   leftArrow.setAttribute('class', 'leftArrow')
+   leftArrow.style.display = ""
+   
+   sC1.appendChild(leftArrow)
 }
 
 //*Changes to next image if user clicks the next arrow
@@ -77,7 +85,7 @@ function changeImage() {
       divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
-      picture_end.style.display = "none" 
+      addLeftArrow(); 
       setCitySrcSrcset();
       break; 
 
