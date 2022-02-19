@@ -29,11 +29,14 @@ p {
 /* Center Div element with different images everytime 
   user interacts with it */
 
+#intro > picture > img, .side-container1, .side-container2 { 
+   height: 40em;
+}
+
 #intro > picture > img {
   top: 0px;
   left: 95px;
   width: 68.2em;
-  height: 40em;
 }
 
 
@@ -41,7 +44,6 @@ p {
   top: 0px; 
   background: black;
   width: 95px; 
-  height: 40em; 
   opacity: 0.9 
 }
 
