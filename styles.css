@@ -1,6 +1,5 @@
 body {
   /*background-color: rgb(64, 110, 121);*/
-  /* button BG colors rgb(218, 123, 34);*/
   background-image: url("images/space2.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -35,28 +34,24 @@ p {
   height: 40em;
 }
 
-.side-container1 {
+
+.side-container1, .side-container2 { 
   position: absolute;
-  left: 0px;
-  top: 0px;
+  top: 0px; 
   background: black;
-  /* background: url("images/pink.jpg"); */
-  width: 95px;
-  height: 40em;
-  opacity: 0.9;
+  width: 95px; 
+  height: 40em; 
+  opacity: 0.9 
+}
+
+.side-container1 { 
+  left: 0px; 
 }
 
 .side-container2 {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background: black;
-  /* background: url("images/pink.jpg"); */
-  width: 95px;
-  height: 40em;
-  opacity: 0.9;
   cursor: pointer;
-}
+  right: 0px; 
+ }
 
 .right_arrow {
   margin: 275% 8.1%;
@@ -66,6 +61,9 @@ p {
 
 .picture_end {
   position: relative;
+}
+
+.picture_end {
   left: 40px;
   top: 19em;
   background: rgb(71, 157, 243);
