@@ -7,8 +7,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+div#intro.info p, #intro > picture > img, .side-container1, .side-container2{ 
+ position: absolute; 
+} 
+
 div#intro.info p {
-  position: absolute;
   top: 30px;
   left: 6em;
   font-style: italic;
@@ -27,7 +30,6 @@ p {
   user interacts with it */
 
 #intro > picture > img {
-  position: absolute;
   top: 0px;
   left: 95px;
   width: 68.2em;
@@ -36,7 +38,6 @@ p {
 
 
 .side-container1, .side-container2 { 
-  position: absolute;
   top: 0px; 
   background: black;
   width: 95px; 
@@ -59,7 +60,7 @@ p {
   width: 5em;
 }
 
-.picture_end {
+.picture_end, button.slide {
   position: relative;
 }
 
@@ -73,7 +74,6 @@ p {
 }
 
 button.slide {
-  position: relative;
   left: 44em;
   top: 42em;
   margin-right: 15px;
