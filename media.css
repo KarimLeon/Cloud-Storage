@@ -1,8 +1,9 @@
 @media screen and (width: 2560px) {
   #intro > picture > img {
     width: 148.1em;
-    height: 70em;
   }
+  
+  #intro > picture > img,
   .side-container1,
   .side-container2 {
     height: 70em;
@@ -28,8 +29,8 @@
 @media screen and (width: 1920px) {
   #intro > picture > img {
     width: 108.1em;
-    height: 55em;
   }
+  #intro > picture > img, 
   .side-container1,
   .side-container2 {
     height: 55em;
@@ -52,8 +53,8 @@
 @media screen and (width: 1680px) {
   #intro > picture > img {
     width: 93.1em;
-    height: 50em;
   }
+  #intro > picture > img,
   .side-container1,
   .side-container2 {
     height: 50em;
@@ -80,8 +81,8 @@
 @media screen and (width: 1600px) {
   #intro > picture > img {
     width: 88.1em;
-    height: 47em;
   }
+  #intro > picture > img, 
   .side-container1,
   .side-container2 {
     height: 47em;
@@ -108,12 +109,12 @@
 @media screen and (width: 1536px) {
   #intro > picture > img {
     width: 84.1em;
-    height: 44em;
   }
   button.slide {
     left: 53em;
     top: 46em;
   }
+  #intro > picture > img,
   .side-container1,
   .side-container2 {
     height: 44em;
@@ -136,8 +137,8 @@
 @media screen and (width: 1440px) {
   #intro > picture > img {
     width: 78.1em;
-    height: 45em;
   }
+  #intro > picture > img,
   .side-container1,
   .side-container2 {
     height: 45em;
