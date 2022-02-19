@@ -69,7 +69,15 @@ function addLeftArrow () {
    leftArrow.setAttribute('src','images/SVG/leftArrow.svg')
    leftArrow.setAttribute('class', 'leftArrow')
    leftArrow.style.display = ""
-   
+  
+   sC1.addEventListener("mouseover", event => {
+      sC1.style.background = 'gray'; 
+  });
+   sC1.addEventListener("mouseout", event => { 
+        sC1.style.background = ""
+       }) 
+   sC1.style.cursor = "pointer"
+  
    sC1.appendChild(leftArrow)
 }
 
