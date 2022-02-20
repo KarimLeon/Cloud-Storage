@@ -56,12 +56,6 @@ p {
   right: 0px; 
  }
 
-.right_arrow {
-  margin: 275% 8.1%;
-  height: 5em;
-  width: 5em;
-}
-
 .picture_end, button.slide {
   position: relative;
 }
@@ -75,6 +69,13 @@ p {
   border-radius: 50%;
 }
 
+
+body.home > div.side-container1 > img.leftArrow, .right_arrow { 
+  margin: 275% 10%; 
+  height: 4.5em; 
+  width: 4.5em; 
+}
+
 button.slide {
   left: 44em;
   top: 42em;
@@ -84,12 +85,6 @@ button.slide {
   border-radius: 50%;
   width: 13px;
   height: 13px;
-}
-
-body.home > div.side-container1 > img {
-  width: 5em;
-  height: 5em;
-  margin-top: 16.8em;
 }
 
 /* hover styles */
