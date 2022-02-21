@@ -7,9 +7,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-div#intro.info p, #intro > picture > img, .side-container1, .side-container2{ 
- position: absolute; 
-} 
+div#intro.info p,
+#intro > picture > img,
+.side-container1,
+.side-container2 {
+  position: absolute;
+}
 
 div#intro.info p {
   top: 30px;
@@ -29,8 +32,10 @@ p {
 /* Center Div element with different images everytime 
   user interacts with it */
 
-#intro > picture > img, .side-container1, .side-container2 { 
-   height: 40em;
+#intro > picture > img,
+.side-container1,
+.side-container2 {
+  height: 40em;
 }
 
 #intro > picture > img {
@@ -39,24 +44,25 @@ p {
   width: 68.2em;
 }
 
-
-.side-container1, .side-container2 { 
-  top: 0px; 
+.side-container1,
+.side-container2 {
+  top: 0px;
   background: black;
-  width: 95px; 
-  opacity: 0.9 
+  width: 95px;
+  opacity: 0.9;
 }
 
-.side-container1 { 
-  left: 0px; 
+.side-container1 {
+  left: 0px;
 }
 
 .side-container2 {
   cursor: pointer;
-  right: 0px; 
- }
+  right: 0px;
+}
 
-.picture_end, button.slide {
+.picture_end,
+button.slide {
   position: relative;
 }
 
@@ -69,11 +75,11 @@ p {
   border-radius: 50%;
 }
 
-
-body.home > div.side-container1 > img.leftArrow, .right_arrow { 
-  margin: 275% 10%; 
-  height: 4.5em; 
-  width: 4.5em; 
+body.home > div.side-container1 > img.leftArrow,
+.right_arrow {
+  margin: 275% 10%;
+  height: 4.5em;
+  width: 4.5em;
 }
 
 button.slide {
@@ -94,5 +100,5 @@ button.slide:hover {
 }
 
 .side-container2:hover {
-  background: grey;
+  background: gray;
 }
