@@ -1,11 +1,11 @@
-#Ignore VSCode 
+#VSCode 
 .vscode
       
 #Node 
 node_modules
 babel.config.json
 
+#Temp files
+media.css.temp 
 
-#Vim 
-.index.html.swp
-.styles.css.swp
+
