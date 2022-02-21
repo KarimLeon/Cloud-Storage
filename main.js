@@ -13,7 +13,7 @@ const sC2 = document.querySelector("body > div.side-container2"),
       picture_end = document.querySelector("body > div.side-container1 > div"),
       leftArrow = document.createElement('img') 
 
-let coffee = 'images/WEBP/coffee1280.webp',
+let rainy = 'images/WEBP/rainy1280.webp',
     city = "images/WEBP/city1280.webp",
     sunset = 'images/WEBP/sunset1280.webp',
     currentImgSrc = img.getAttribute('src')
@@ -24,17 +24,31 @@ function forced_Hover_State() {
 
  forced_Hover_State()
 
+
+ function setSrcSet(firstImage, secImage) {
+  let firstSrc = document.querySelector("#intro > picture > source.sec")
+  let secSrc = document.querySelector("#intro > picture > source.treys")
+
+  firstSrc.setAttribute('srcset', firstImage)
+  secSrc.setAttribute('srcset', secImage)
+
+
+ }
+
 // Change image based off of which dots are clicked
+// TODO change dot colors to skyblue 
 
 dot1.onclick = () => {
-  img.setAttribute('src', coffee)
+  img.setAttribute('src', rainy)
   dot1.style.backgroundColor = "white"
   dot2.style.backgroundColor = ""
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: content')
   picture_end.style.display = ""
   leftArrow.style.display = "none"
-  setCoffeeSrcSet()
+  leftArrow.style.cursor = "none"
+  removeleftArrow()
+  setSrcSet('images/WEBP/rainy1920.webp', 'images/WEBP/rainy400.webp')
 } 
 
 dot2.onclick = () => { 
@@ -44,7 +58,7 @@ dot2.onclick = () => {
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: none')
   addLeftArrow()
-  setCitySrcSrcset()
+  setSrcSet('images/WEBP/city1920.webp', 'images/WEBP/city2560.webp')
 }
 
 dot3.onclick = () => { 
@@ -54,14 +68,15 @@ dot3.onclick = () => {
   dot2.style.backgroundColor = ""
   divP.setAttribute('style', 'display: none')
   addLeftArrow()
-  setSunsetSrcset()
+  setSrcSet('images/WEBP/sunset1920.webp', 'images/WEBP/sunset5184.webp')
 }
 
-//TODO add left arrow when user clicks to the next image slide or clicks 
-// any dot image excluding the first one 
 
-
-
+function removeleftArrow () {
+  const sC1 = document.querySelector('.side-container1') 
+  picture_end.style.display = ""
+  leftArrow.style.display = "none"
+}
 
 function addLeftArrow () { 
   const sC1 = document.querySelector('.side-container1') 
@@ -72,11 +87,11 @@ function addLeftArrow () {
   
    sC1.addEventListener("mouseover", event => {
       sC1.style.background = 'gray'; 
+      sC1.style.cursor = "pointer";
   });
    sC1.addEventListener("mouseout", event => { 
         sC1.style.background = ""
        }) 
-   sC1.style.cursor = "pointer"
   
    sC1.appendChild(leftArrow)
 }
@@ -88,46 +103,23 @@ function changeImage() {
   const imgSrc = img.getAttribute('src')
    
    switch (imgSrc) { 
-      case coffee: 
+      case rainy: 
       img.setAttribute('src', city) 
       divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
       addLeftArrow(); 
-      setCitySrcSrcset();
+      setSrcSet('images/WEBP/city1920.webp', 'images/WEBP/city2560.webp')
       break; 
 
       case city: 
       img.setAttribute("src", sunset)
       dot2.style.backgroundColor = ""
       dot3.style.backgroundColor = "white"
-      setSunsetSrcset()
+      setSrcSet('images/WEBP/sunset1920.webp','images/WEBP/sunset5184.webp')
    }
 
 }
-
-// TODO Download different size images for sunset image
-//* Changes source elements srcset to current img source when user clicks to the next slide
-
-let firstSrc = document.querySelector("#intro > picture > source.sec")
-let secSrc = document.querySelector("#intro > picture > source.treys")
-let sourceForImgs = document.createElement('source') 
-
-function setCitySrcSrcset() {   
-  firstSrc.setAttribute('srcset', 'images/WEBP/city1920.webp')
-  secSrc.setAttribute('srcset', 'images/WEBP/city2560.webp')
-}
-
-function setCoffeeSrcSet() {
-  firstSrc.setAttribute('srcset', 'images/WEBP/coffee1920.webp')
-  secSrc.setAttribute('srcset', 'images/WEBP/coffee5616.webp')
-}
-
-function setSunsetSrcset() { 
-  firstSrc.setAttribute('srcset', 'images/WEBP/sunset1920.webp')
-  secSrc.setAttribute('srcset', 'images/WEBP/sunset5184.webp')
-}
-
 
 
 // MEDIA QUERY: ADD MENU BUTTON when width is 480px or less (for Phone USERS)
