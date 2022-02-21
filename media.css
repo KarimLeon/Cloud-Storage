@@ -11,9 +11,6 @@
   .picture_end {
     top: 33em;
   }
-  .right_arrow {
-    margin: 470% 8.1%;
-  }
   p {
     font-size: 3em;
     line-height: 2.4em;
@@ -38,9 +35,6 @@
   .picture_end {
     top: 26em;
   }
-  .right_arrow {
-    margin: 390% 8.1%;
-  }
   p {
     font-size: 40px;
     line-height: 85px;
@@ -58,9 +52,6 @@
   .side-container1,
   .side-container2 {
     height: 50em;
-  }
-  .right_arrow {
-    margin: 335% 8.1%;
   }
   .picture_end {
     top: 23em;
@@ -99,9 +90,6 @@
     font-size: 180%;
     line-height: 75px;
   }
-  .right_arrow {
-    margin: 315% 8.1%;
-  }
   .picture_end {
     top: 22em;
   }
@@ -118,9 +106,6 @@
   .side-container1,
   .side-container2 {
     height: 44em;
-  }
-  .right_arrow {
-    margin: 300% 8.1%;
   }
   .picture_end {
     top: 20em;
@@ -145,9 +130,6 @@
   }
   .picture_end {
     top: 21em;
-  }
-  .right_arrow {
-    margin: 305% 8.1%;
   }
   button.slide {
     top: 47em;
