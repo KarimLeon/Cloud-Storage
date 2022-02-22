@@ -2,7 +2,7 @@
   #intro > picture > img {
     width: 148.1em;
   }
-  
+
   #intro > picture > img,
   .side-container1,
   .side-container2 {
@@ -27,7 +27,7 @@
   #intro > picture > img {
     width: 108.1em;
   }
-  #intro > picture > img, 
+  #intro > picture > img,
   .side-container1,
   .side-container2 {
     height: 55em;
@@ -73,7 +73,7 @@
   #intro > picture > img {
     width: 88.1em;
   }
-  #intro > picture > img, 
+  #intro > picture > img,
   .side-container1,
   .side-container2 {
     height: 47em;
@@ -127,6 +127,10 @@
   .side-container1,
   .side-container2 {
     height: 45em;
+  }
+  body.home > div.side-container1 > img.leftArrow,
+  .right_arrow {
+    margin: 320% 8.1%;
   }
   .picture_end {
     top: 21em;
