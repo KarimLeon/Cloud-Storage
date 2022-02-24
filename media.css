@@ -60,10 +60,6 @@
     top: 54em;
     left: 48rem;
   }
-  div#intro.info p {
-    top: 1.6em;
-    left: 8em;
-  }
   p {
     line-height: 3em;
     font-size: 175%;
@@ -81,10 +77,6 @@
   button.slide {
     top: 50em;
     left: 55em;
-  }
-  div#intro.info p {
-    top: 2em;
-    left: 8em;
   }
   p {
     font-size: 180%;
@@ -109,10 +101,6 @@
   }
   .picture_end {
     top: 20em;
-  }
-  div#intro.info p {
-    top: 2em;
-    left: 7em;
   }
   p {
     font-size: 170%;
@@ -139,9 +127,6 @@
     top: 47em;
     left: 50em;
   }
-  div#intro.info p {
-    left: 8em;
-  }
   p {
     line-height: 3em;
   }
@@ -163,9 +148,6 @@
   }
   p {
     font-size: 110%;
-  }
-  div#intro.info p {
-    left: 8em;
   }
 }
 @media screen and (max-width: 480px) {
