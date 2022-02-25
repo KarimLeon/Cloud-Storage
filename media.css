@@ -178,8 +178,7 @@
     display: none;
   }
   body {
-    background: url("images/WEBP/unique.webp") no-repeat;
-    background-size: cover;
+    background: url("images/WEBP/unique.webp")
   }
 }
 
