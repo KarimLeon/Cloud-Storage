@@ -11,6 +11,10 @@
   .picture_end {
     top: 33em;
   }
+  .right_arrow,
+  body.home > div.side-container1 > img.leftArrow {
+    margin: 500% 10%;
+  }
   p {
     font-size: 3em;
     line-height: 2.4em;
@@ -34,6 +38,10 @@
   }
   .picture_end {
     top: 26em;
+  }
+  .right_arrow,
+  body.home > div.side-container1 > img.leftArrow {
+    margin: 385% 10%;
   }
   p {
     font-size: 40px;
@@ -77,6 +85,10 @@
   button.slide {
     top: 50em;
     left: 55em;
+  }
+  .right_arrow,
+  body.home > div.side-container1 > img.leftArrow {
+    margin: 330% 10%;
   }
   p {
     font-size: 180%;
