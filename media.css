@@ -178,7 +178,7 @@
     display: none;
   }
   body {
-    background: url("images/unique.jpg") no-repeat;
+    background: url("images/WEBP/unique.webp") no-repeat;
     background-size: cover;
   }
 }
