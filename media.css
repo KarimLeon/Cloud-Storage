@@ -178,7 +178,8 @@
     display: none;
   }
   body {
-    background-image: url("images/uniqueResized.jpg");
+    background: url("images/unique.jpg") no-repeat;
+    background-size: cover;
   }
 }
 
