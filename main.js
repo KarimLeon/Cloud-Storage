@@ -124,7 +124,7 @@ function changeImage() {
 
 // MEDIA QUERY: ADD MENU BUTTON when width is 480px or less (for Phone USERS)
 
-const phoneDevice = window.matchMedia('(max-width: 480px)');
+const phoneDevice = window.matchMedia('(max-width: 800px)');
 
 function createSVG_menu() {
   
@@ -146,4 +146,4 @@ if (phoneDevice.matches) {
 
 }
 createSVG_menu()
-//phoneMedia.addEventListener('change', createSVG_menu);
+
