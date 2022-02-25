@@ -170,7 +170,7 @@
     font-size: 110%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   /*480px was original value*/
   div#intro.info,
   .side-container1,
