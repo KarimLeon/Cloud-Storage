@@ -64,6 +64,10 @@
   .picture_end {
     top: 23em;
   }
+  .right_arrow,
+  body.home > div.side-container1 > img.leftArrow {
+    margin: 350% 10%;
+  }
   button.slide {
     top: 54em;
     left: 48rem;
@@ -113,6 +117,10 @@
   }
   .picture_end {
     top: 20em;
+  }
+  .right_arrow,
+  body.home > div.side-container1 > img.leftArrow {
+    margin: 310% 10%;
   }
   p {
     font-size: 170%;
