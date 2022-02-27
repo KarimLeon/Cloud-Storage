@@ -78,8 +78,7 @@ button.slide {
   border-radius: 50%;
 }
 
-body.home > div.side-container1 > img.leftArrow,
-.right_arrow {
+.arrow {
   margin: 275% 10%;
   height: 4.5em;
   width: 4.5em;
