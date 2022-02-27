@@ -82,7 +82,7 @@ function addLeftArrow () {
   const sC1 = document.querySelector('.side-container1') 
    picture_end.style.display = "none"
    leftArrow.setAttribute('src','images/SVG/leftArrow.svg')
-   leftArrow.setAttribute('class', 'leftArrow')
+   leftArrow.setAttribute('class', 'arrow')
    leftArrow.style.display = ""
   
    sC1.addEventListener("mouseover", event => {
