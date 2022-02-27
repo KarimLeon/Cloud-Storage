@@ -48,7 +48,7 @@ dot1.onclick = () => {
   leftArrow.style.display = "none"
   leftArrow.style.cursor = "none"
   removeleftArrow()
-  setSrcSet('images/WEBP/rainy1920.webp', 'images/WEBP/rainy400.webp')
+  setSrcSet('images/WEBP/rainy1920.webp', 'images/WEBP/rainy5120.webp')
 } 
 
 dot2.onclick = () => { 
