@@ -1,14 +1,23 @@
-@media screen and (width: 5120px) { 
-/*
- #intro > picture > img { 
-   width: none;
- }
-}
-*/
-.side-container1, .side-container2 {
-    height: 120em;
+@media screen and (width: 5120px) {
+  #intro > picture > img {
+    width: 310em;
+  }
+
+  #intro > picture > img,
+  .side-container1,
+  .side-container2 {
+    height: 140em;
+  }
+  div#intro.info p {
+    right: 6em;
+    top: 1em;
+  }
+  p {
+    font-size: 6em;
+    line-height: 2.3em;
   }
 }
+
 @media screen and (width: 2560px) {
   #intro > picture > img {
     width: 148.1em;
@@ -22,8 +31,7 @@
   .picture_end {
     top: 33em;
   }
-  .right_arrow,
-  body.home > div.side-container1 > img.leftArrow {
+  .arrow {
     margin: 500% 10%;
   }
   p {
@@ -50,8 +58,7 @@
   .picture_end {
     top: 26em;
   }
-  .right_arrow,
-  body.home > div.side-container1 > img.leftArrow {
+  .arrow {
     margin: 385% 10%;
   }
   p {
@@ -75,8 +82,7 @@
   .picture_end {
     top: 23em;
   }
-  .right_arrow,
-  body.home > div.side-container1 > img.leftArrow {
+  .arrow {
     margin: 350% 10%;
   }
   button.slide {
@@ -101,8 +107,7 @@
     top: 50em;
     left: 55em;
   }
-  .right_arrow,
-  body.home > div.side-container1 > img.leftArrow {
+  .arrrow {
     margin: 330% 10%;
   }
   p {
@@ -129,8 +134,7 @@
   .picture_end {
     top: 20em;
   }
-  .right_arrow,
-  body.home > div.side-container1 > img.leftArrow {
+  .arrow {
     margin: 310% 10%;
   }
   p {
@@ -147,8 +151,7 @@
   .side-container2 {
     height: 45em;
   }
-  body.home > div.side-container1 > img.leftArrow,
-  .right_arrow {
+  .arrow {
     margin: 320% 8.1%;
   }
   .picture_end {
@@ -189,7 +192,7 @@
     display: none;
   }
   body {
-    background-image: url("images/WEBP/unique.webp")
+    background-image: url("images/WEBP/unique.webp");
   }
 }
 
