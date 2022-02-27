@@ -1,6 +1,6 @@
 @media screen and (width: 5120px) {
   #intro > picture > img {
-    width: 310em;
+    width: 308.1em;
   }
 
   #intro > picture > img,
@@ -15,6 +15,19 @@
   p {
     font-size: 6em;
     line-height: 2.3em;
+  }
+  .picture_end {
+    top: 65em;
+  }
+  .arrow {
+    margin: calc(100% * 10.6) 8.1%;
+  }
+  button.slide {
+    top: calc(20em * 7.5);
+    left: calc(20em * 9.1);
+    width: 3.5em;
+    height: 3.5em;
+    margin-right: 40px;
   }
 }
 
