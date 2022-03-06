@@ -30,7 +30,7 @@ function forced_Hover_State() {
  forced_Hover_State()
 
 
- function setSrcSet(firstImage, secImage) {
+ function setSrcSet(firstImage, ... secImage) {
   let firstSrc = document.querySelector("#intro > picture > source.sec")
   let secSrc = document.querySelector("#intro > picture > source.treys")
 
@@ -109,8 +109,8 @@ function changeImage(img1, image1, img2, image2) {
   const imgSrc = img.getAttribute('src')
    
    switch (imgSrc) { 
-      case /*rainy*/img1: 
-      img.setAttribute('src', /*city*/image1) 
+      case img1: 
+      img.setAttribute('src', image1) 
       divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
@@ -119,8 +119,8 @@ function changeImage(img1, image1, img2, image2) {
       setSrcSet(`${image1.replace('1280', '1920')}`, `${image1.replace('1280','2560')}`)
       break; 
 
-      case /*city*/img2: 
-      img.setAttribute("src", /*sunset*/image2)
+      case img2: 
+      img.setAttribute("src", image2)
       dot2.style.backgroundColor = ""
       function changeDotColors () {
         
@@ -143,7 +143,10 @@ function changeImage(img1, image1, img2, image2) {
             dot1.style.backgroundColor = "white"
       }
       changeDotColors()
-      setSrcSet(`${image2.replace('1280','1920')}`,`${image2.replace('1280', '5184')}`)
+      setSrcSet(`${image2.replace('1280','1920')}`,`${image2.replace('1280', function () { 
+          if (image2 == rainy) return '5120'
+          else if (image2 == sunset) return '5184'            
+      })}`)
    }
 
   }
