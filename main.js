@@ -1,6 +1,10 @@
 'use strict'
 
 
+
+
+
+
 const body = document.querySelector('.home')
 
 const sC2 = document.querySelector("body > div.side-container2"),
@@ -11,7 +15,8 @@ const sC2 = document.querySelector("body > div.side-container2"),
       divP = document.querySelector("#intro > blockquote"),
       main = document.querySelector('main'),
       picture_end = document.querySelector("body > div.side-container1 > div"),
-      leftArrow = document.createElement('img') 
+      leftArrow = document.createElement('img'),
+      sC1 = document.querySelector('.side-container1')  
 
 let rainy = 'images/WEBP/rainy1280.webp',
     city = "images/WEBP/city1280.webp",
@@ -45,8 +50,6 @@ dot1.onclick = () => {
   dot3.style.backgroundColor = ""
   divP.setAttribute('style', 'display: content')
   picture_end.style.display = ""
-  leftArrow.style.display = "none"
-  leftArrow.style.cursor = "none"
   removeleftArrow()
   setSrcSet('images/WEBP/rainy1920.webp', 'images/WEBP/rainy5120.webp')
 } 
@@ -73,18 +76,21 @@ dot3.onclick = () => {
 
 
 function removeleftArrow () {
-  const sC1 = document.querySelector('.side-container1') 
-  picture_end.style.display = ""
-  leftArrow.style.display = "none"
+  leftArrow.remove()
+  sC1.style.cursor = "none";
+  sC1.addEventListener("mouseover", event => {
+    sC1.style.background = ''; 
+    sC1.style.cursor = "";
+});
 }
 
-function addLeftArrow () { 
-  const sC1 = document.querySelector('.side-container1') 
+function addLeftArrow () {  
    picture_end.style.display = "none"
    leftArrow.setAttribute('src','images/SVG/leftArrow.svg')
    leftArrow.setAttribute('class', 'arrow')
    leftArrow.style.display = ""
-  
+
+   sC1.setAttribute('onclick', "changeImage(sunset, city, city, rainy)")  
    sC1.addEventListener("mouseover", event => {
       sC1.style.background = 'gray'; 
       sC1.style.cursor = "pointer";
@@ -99,27 +105,49 @@ function addLeftArrow () {
 //*Changes to next image if user clicks the next arrow
 
 
-function changeImage() {
+function changeImage(img1, image1, img2, image2) {
   const imgSrc = img.getAttribute('src')
    
    switch (imgSrc) { 
-      case rainy: 
-      img.setAttribute('src', city) 
+      case /*rainy*/img1: 
+      img.setAttribute('src', /*city*/image1) 
       divP.setAttribute('style', 'display:none')
       dot1.style.backgroundColor = ""
       dot2.style.backgroundColor = "white"
+      dot3.style.backgroundColor = ""
       addLeftArrow(); 
-      setSrcSet('images/WEBP/city1920.webp', 'images/WEBP/city2560.webp')
+      setSrcSet(`${image1.replace('1280', '1920')}`, `${image1.replace('1280','2560')}`)
       break; 
 
-      case city: 
-      img.setAttribute("src", sunset)
+      case /*city*/img2: 
+      img.setAttribute("src", /*sunset*/image2)
       dot2.style.backgroundColor = ""
-      dot3.style.backgroundColor = "white"
-      setSrcSet('images/WEBP/sunset1920.webp','images/WEBP/sunset5184.webp')
+      function changeDotColors () {
+        
+        if (image2 == sunset) {
+         dot3.style.backgroundColor = "white"
+        }
+        else if (image2 == sunset.replace("1280",'1920')) {
+         dot3.style.backgroundColor = "white" 
+        }
+        else if (image2 == sunset.replace('1920','5184'))
+         dot3.style.backgroundColor = "white"
+
+         if (image2 == rainy) {
+            dot1.style.backgroundColor = "white"
+         }
+        else if (image2 == rainy.replace("1280",'1920')) {
+            dot1.style.backgroundColor = "white"
+       }
+        else if (image2 == rainy.replace('1920','2560'))
+            dot1.style.backgroundColor = "white"
+      }
+      changeDotColors()
+      setSrcSet(`${image2.replace('1280','1920')}`,`${image2.replace('1280', '5184')}`)
    }
 
-}
+  }
+
 
 
 // MEDIA QUERY: ADD MENU BUTTON when width is 480px or less (for Phone USERS)
