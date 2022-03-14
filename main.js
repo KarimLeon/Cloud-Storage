@@ -1,9 +1,6 @@
 'use strict'
 
-
-
-
-
+// TODO: REMOVE LEFT ARROW WHENE USERS GOES BACK TO FIRST IMAGE SLIDES
 
 const body = document.querySelector('.home')
 
@@ -127,20 +124,12 @@ function changeImage(img1, image1, img2, image2) {
         if (image2 == sunset) {
          dot3.style.backgroundColor = "white"
         }
-        else if (image2 == sunset.replace("1280",'1920')) {
-         dot3.style.backgroundColor = "white" 
-        }
-        else if (image2 == sunset.replace('1920','5184'))
-         dot3.style.backgroundColor = "white"
-
+       
          if (image2 == rainy) {
             dot1.style.backgroundColor = "white"
+            divP.setAttribute('style', '')
          }
-        else if (image2 == rainy.replace("1280",'1920')) {
-            dot1.style.backgroundColor = "white"
-       }
-        else if (image2 == rainy.replace('1920','2560'))
-            dot1.style.backgroundColor = "white"
+        
       }
       changeDotColors()
       setSrcSet(`${image2.replace('1280','1920')}`,`${image2.replace('1280', function () { 
