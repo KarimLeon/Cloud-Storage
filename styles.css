@@ -60,7 +60,6 @@ p {
 }
 
 .side-container2 {
-  cursor: pointer;
   right: 0px;
 }
 
@@ -103,4 +102,5 @@ button.slide:hover {
 
 .side-container2:hover {
   background: gray;
+  cursor: pointer;
 }
