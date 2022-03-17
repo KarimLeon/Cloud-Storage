@@ -2,7 +2,8 @@
 
 // TODO: REMOVE LEFT ARROW WHENE USERS GOES BACK TO FIRST IMAGE SLIDES
 
-const body = document.querySelector('.home')
+const body = document.querySelector('.home'),
+      head = document.querySelector("head")
 
 const sC2 = document.querySelector("body > div.side-container2"),
       dot1 = document.querySelector("#intro > section > button.slide.dot1"),
@@ -123,6 +124,14 @@ function changeImage(img1, image1, img2, image2) {
         
         if (image2 == sunset) {
          dot3.style.backgroundColor = "white"
+         const style = document.createElement('style')
+         head.appendChild(style)
+         style.textContent = `
+         .side-container2:hover {
+          background: black;
+          cursor: none;
+        }
+          `
         }
        
          if (image2 == rainy) {
