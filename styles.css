@@ -5,3 +5,16 @@ body {
  background-attachment: fixed;
 }
 
+div.btn {
+ text-align: center;
+}
+
+div.btn > button {
+ background: none;
+ border-radius: 30px;
+ width: 200px;
+ height: 70px;
+ color: white;
+ margin: 70px;
+ margin-top: 490px;
+}
