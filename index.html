@@ -22,83 +22,9 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media.css" />
     <link rel="icon" href="images/photo.png " />
-    <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
 
   <body class="home">
-    <main>
-      <div id="intro" class="info">
-        <picture>
-          <source
-            class="sec"
-            srcset="images/JPG/line_of_fire1920.jpg"
-            media="(min-width: 1281px) and (max-width: 1920px)"
-          />
-          <source
-            class="treys"
-            srcset="images/JPG/line_of_fire2560.jpg"
-            media="(min-width: 1921px)"
-          />
-          <source
-            class="fourth"
-            srcset="images/JPG/line_of_fire3500.jpg"
-            media="(min-width: 2560px)"
-          />
-          <source
-            class="fifth"
-            srcset="images/JPG/line_of_fire5241.jpg"
-            media="(min-width: 3500px)"
-          />
-          <img
-            src="images/JPG/line_of_fire1280.jpg"
-            alt="Inform you guys about our cloud system"
-          />
-        </picture>
-        <section aria-label="Different image slides" class="image-slides">
-          <button aria-label="next image" class="slide dot1"></button>
-          <button aria-label="next image" class="slide dot2"></button>
-          <button aria-label="last image" class="slide dot3"></button>
-        </section>
-        <blockquote>
-          <p>
-            " When we let fear be our master, we cannot be happy and free as a
-            butterfly. But when we choose to trust the journey and embrace love
-            and joy, we are free to fly. "<br /><br />
-            <cite>- Annicken R. Day</cite>
-          </p>
-        </blockquote>
-      </div>
-    </main>
-    <div
-      aria-label="Previous slide"
-      class="side-container1"
-      onclick="changeImageRTL()"
-    >
-      <div class="picture_end"></div>
-    </div>
-    <!-- 
-    TESTING SOMETHING HERE!!!!! -------|
-    <div
-      aria-label="Next"
-      class="side-container2" 
-      onclick="changeImage(rainy, city, city, sunset)" 
-    >
-    -->
-    <div aria-label="Next" class="side-container2" onclick="changeImageLTR()">
-      <img
-        class="arrow"
-        src="images/SVG/right-arrow.svg"
-        alt="Next Information Slide"
-      />
-    </div>
 
-    <script>
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js").then(function () {
-          console.log("Service Worker Registered");
-        });
-      }
-    </script>
-    <script async src="backUp.js"></script>
   </body>
 </html>
