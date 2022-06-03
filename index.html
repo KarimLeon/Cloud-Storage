@@ -31,17 +31,26 @@
         <picture>
           <source
             class="sec"
-            srcset="images/WEBP/rainy1920.webp"
+            srcset="images/JPG/line_of_fire1920.jpg"
             media="(min-width: 1281px) and (max-width: 1920px)"
           />
           <source
             class="treys"
-            srcset="images/WEBP/rainy5120.webp"
+            srcset="images/JPG/line_of_fire2560.jpg"
             media="(min-width: 1921px)"
           />
+          <source
+            class="fourth"
+            srcset="images/JPG/line_of_fire3500.jpg"
+            media="(min-width: 2560px)"
+          />
+          <source
+            class="fifth"
+            srcset="images/JPG/line_of_fire5241.jpg"
+            media="(min-width: 3500px)"
+          />
           <img
-            src="images/WEBP/rainy1280.webp"
-            onerror='this.onerror=null; this.src="images/JPG/rainy1280.jpg"'
+            src="images/JPG/line_of_fire1280.jpg"
             alt="Inform you guys about our cloud system"
           />
         </picture>
@@ -60,14 +69,22 @@
         </blockquote>
       </div>
     </main>
-    <div aria-label="Previous slide" class="side-container1">
+    <div
+      aria-label="Previous slide"
+      class="side-container1"
+      onclick="changeImageRTL()"
+    >
       <div class="picture_end"></div>
     </div>
+    <!-- 
+    TESTING SOMETHING HERE!!!!! -------|
     <div
       aria-label="Next"
-      class="side-container2"
-      onclick="changeImage(rainy, city, city, sunset)"
+      class="side-container2" 
+      onclick="changeImage(rainy, city, city, sunset)" 
     >
+    -->
+    <div aria-label="Next" class="side-container2" onclick="changeImageLTR()">
       <img
         class="arrow"
         src="images/SVG/right-arrow.svg"
@@ -82,6 +99,6 @@
         });
       }
     </script>
-    <script async src="main.js"></script>
+    <script async src="backUp.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 'use strict'
 
-// TODO: REMOVE LEFT ARROW WHENE USERS GOES BACK TO FIRST IMAGE SLIDES
+
 
 const body = document.querySelector('.home'),
       head = document.querySelector("head")
@@ -121,18 +121,21 @@ function changeImage(img1, image1, img2, image2) {
       img.setAttribute("src", image2)
       dot2.style.backgroundColor = ""
       function changeDotColors () {
-        
+        const style = document.createElement('style')
+        head.appendChild(style)
+
+        //TODO: Stop style element from duplicating
+
         if (image2 == sunset) {
-         dot3.style.backgroundColor = "white"
-         const style = document.createElement('style')
-         head.appendChild(style)
+         dot3.style.backgroundColor = "white";
+
          style.textContent = `
          .side-container2:hover {
           background: black;
-          cursor: none;
+          cursor: default;
         }
-          `
-        }
+          `;  }
+
        
          if (image2 == rainy) {
             dot1.style.backgroundColor = "white"

@@ -6,6 +6,7 @@ node_modules
 babel.config.json
 
 #Temp files
-media.css.temp 
+media.css.temp
+backUp.js 
 
 
