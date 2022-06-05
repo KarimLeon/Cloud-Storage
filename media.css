@@ -1,0 +1,8 @@
+/* Change button width/height based on users screen resolution */
+
+@media screen and (min-width: 3280px) and (max-width: 5120px)  {
+    div.btn > button {
+       width: 700px;
+       height: 200px;
+    }
+}
