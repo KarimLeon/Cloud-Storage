@@ -6,3 +6,10 @@
        height: 200px;
     }
 }
+
+@media screen and (min-width: 2340px) and (max-width: 3280px)  {
+    div.btn > button {
+       width: 500px;
+       height: 200px;
+    }
+}
