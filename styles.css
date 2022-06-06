@@ -16,5 +16,15 @@ div.btn > button {
  height: 70px;
  color: white;
  margin: 70px;
- margin-top: 490px;
 }
+
+.b:hover {
+  animation-name: bg;
+  animation-duration: 5s; 
+}
+
+@keyframes bg {
+  from {background: none}
+  to {background: white}
+}
+
