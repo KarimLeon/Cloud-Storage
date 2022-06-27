@@ -11,7 +11,7 @@ div.btn {
 
 div.btn > button {
   background: none;
-  border-radius: 30px;
+  border-color: black;
   width: 200px;
   height: 70px;
   color: white;
