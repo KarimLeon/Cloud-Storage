@@ -1,29 +1,29 @@
 /* Change button width/height based on users screen resolution */
 
-@media screen and (min-width: 3280px) and (max-width: 5120px)  {
-    div.btn > button {
-       width: 700px;
-       height: 200px;
-    }
+@media screen and (min-width: 3280px) and (max-width: 5120px) {
+  div.btn > button {
+    width: 700px;
+    height: 200px;
+  }
 }
 
-@media screen and (min-width: 2340px) and (max-width: 3279px)  {
-    div.btn > button {
-       width: 500px;
-       height: 200px;
-    }
+@media screen and (min-width: 2340px) and (max-width: 3279px) {
+  div.btn > button {
+    width: 400px;
+    height: 150px;
+  }
 }
 
-@media screen and (min-width: 1460px) and (max-width: 2339px)  {
-    div.btn > button {
-       width: 350px;
-       height: 120px;
-    }
+@media screen and (min-width: 1460px) and (max-width: 2339px) {
+  div.btn > button {
+    width: 350px;
+    height: 120px;
+  }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1459px)  {
-    div.btn > button {
-       width: 300px;
-       height: 110px;
-    }
+@media screen and (min-width: 1280px) and (max-width: 1459px) {
+  div.btn > button {
+    width: 300px;
+    height: 110px;
+  }
 }
