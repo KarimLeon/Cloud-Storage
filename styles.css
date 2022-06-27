@@ -30,5 +30,6 @@ div.btn > button {
   }
   to {
     background: white;
+    color: black;
   }
 }
